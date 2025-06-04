@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* From style_1 on root */
+  color: #073e40; /* Default text color from style_8/style_9 */
+}
+
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px; /* style_1 gap */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.close-button-container { /* style_42 */
+  position: absolute;
+  top: 20px; /* Calculated from y diff */
+  right: 32px; /* Calculated from x diff and parent padding */
+  display: flex;
+  justify-content: flex-end; /* Was 'max' */
+  align-items: center;
+  gap: 4px;
+  /* padding from style_42 is quite large, might be for hit area. Let's simplify for visual. */
+  /* padding: 32px 16px 64px 64px; */
+  z-index: 10;
+}
+
+.close-button__text { /* style_43 */
+  color: #052526;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.close-button__icon { /* style_44 */
+  width: 24px;
+  height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 40px 16px;
+    gap: 64px;
+  }
+
+  .project-header__text-layout {
+    flex-direction: column;
+    gap: 20px !important; /* Override inline style gap */
+    align-items: flex-start;
+  }
+
+  .project-header__title-block,
+  .project-header__description-block {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-row .gallery-item {
+    width: 100% !important; /* Ensure full width when stacked */
+    max-width: 400px; /* Optional: prevent oversized images on mobile */
+  }
+  
+  .page-navigation {
+    width: 90% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .nav-button-group {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+    .title-banner__heading { /* style_3 */
+        font-size: 40px !important;
+        line-height: 1.2 !important;
+    }
+    .project-title { /* style_8 */
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+    }
+    .project-description { /* style_9 */
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+    .page-navigation {
+        flex-direction: column;
+        gap: 10px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .nav-button-group--center {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

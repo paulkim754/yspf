@@ -1,0 +1,350 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff; /* Assuming a default white background for the page */
+}
+
+.page-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styles from css_summary.json */
+.style_2_title_block { /* For 635:2707 */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-radius: 32px;
+  width: 100%; /* Occupy width within page-container's padding */
+}
+
+.style_3_title_text { /* For I635:2707;310:1891 */
+  color: #a4e9eb;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.style_4_campaign_group { /* For 635:2712, 635:2708, 635:2716 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 100%;
+}
+
+.style_5_campaign_card_main { /* For 635:2713, 635:2709, 635:2717 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 32px; /* This might not be visible if background is transparent */
+}
+
+.style_6_campaign_text_layout { /* For I635:2713;319:7472 etc. */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.style_7_campaign_text_column { /* For I635:2713;319:7630 etc. */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1; /* Allow columns to take space */
+}
+
+.style_8_campaign_title { /* For I635:2713;319:7474 etc. */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.style_9_campaign_description { /* For I635:2713;319:7479 etc. */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.style_10_campaign_image_wrapper { /* For 635:2714 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.img_style_11 { border-radius: 32px; }
+
+.style_12_campaign_image_wrapper { /* For 635:2710 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+/* .img_style_13 has no specific border/radius */
+
+.style_14_campaign_subtitle { /* For I635:2717;319:7475 */
+  color: #156263;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.style_15_campaign3_image_area { /* For 635:2718 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.style_16_campaign3_main_image_frame { /* For 635:2719 */
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; /* Gap between children if any, here only one merged div */
+  padding: 80px;
+  border-radius: 32px;
+  overflow: hidden; /* Might clip absolutely positioned children if they go outside padding */
+  box-sizing: border-box;
+}
+.merged-image-container {
+  position: relative;
+  /* width and height will be set by inline styles based on content */
+}
+/* .img_style_17 & .img_style_18 have no specific border/radius */
+
+.style_19_campaign3_sub_image_grid { /* For 635:2722 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.style_20_campaign3_image_row { /* For 635:2723 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.img_style_21 { border-radius: 32px; border: 1px solid #e5e5e5; }
+.img_style_22 { border-radius: 32px; border: 1px solid #e5e5e5; }
+
+.style_23_campaign3_image_row { /* For 635:2726 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.img_style_24 { border-radius: 32px; border: 1px solid #e5e5e5; }
+.img_style_25 { border-radius: 32px; }
+
+
+.style_26_nav_bar { /* For 635:2729 */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 82px;
+  opacity: 0.75;
+  overflow: hidden;
+  width: auto; /* Let it size by content or set a specific width if needed */
+  min-width: 550px; /* From figma node width */
+}
+
+.style_27_nav_item_previous { /* For I635:2729;566:5854 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-left: 32px;
+}
+
+.style_28_nav_icon_button { /* For I635:2729;726:5592 etc. */
+  background-color: #a4e9eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px;
+  opacity: 0.4;
+}
+
+.style_30_nav_text { /* For I635:2729;566:5856 etc. */
+  color: #a4e9eb;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.style_31_nav_item_list { /* For I635:2729;577:7429 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.style_33_nav_item_next { /* For I635:2729;566:5769 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Was 'max' */
+  align-items: center;
+  gap: 16px;
+  padding-right: 32px;
+}
+
+.fixed-close-button-wrapper { /* Wrapper for 726:5455 */
+  position: absolute;
+  top: 20px; /* Relative to page-container top border */
+  right: 32px; /* Relative to page-container right border */
+  z-index: 100;
+  width: 151px; /* From bounding box */
+  height: 120px; /* From bounding box */
+}
+
+.style_35_fixed_close_button_content { /* For 726:5455 content */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Was 'max' */
+  align-items: center;
+  gap: 4px;
+  /* Padding from style_35 is complex, might be for internal layout of an instance.
+     The visual shows text then icon. Let's adjust for that. */
+  padding-left: 64px; /* This seems large, might be from original component structure */
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.style_36_fixed_close_button_text { /* For I726:5455;726:5446 */
+  color: #052526;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+/* Responsive adjustments for text and layout */
+@media (max-width: 768px) {
+  .style_3_title_text {
+    font-size: 48px; /* Adjust title font size */
+    line-height: 1.2;
+  }
+  .style_8_campaign_title {
+    font-size: 40px; /* Adjust campaign title font size */
+    line-height: 1.2;
+  }
+  .style_6_campaign_text_layout {
+    flex-direction: column; /* Stack text columns on smaller screens */
+    gap: 32px;
+  }
+  .style_26_nav_bar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    min-width: auto;
+    width: 90%;
+  }
+  .style_27_nav_item_previous,
+  .style_31_nav_item_list,
+  .style_33_nav_item_next {
+    padding: 10px;
+    justify-content: center;
+  }
+  .page-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 64px;
+  }
+  .style_16_campaign3_main_image_frame {
+    padding: 20px;
+  }
+  .style_20_campaign3_image_row,
+  .style_23_campaign3_image_row {
+    flex-direction: column; /* Stack images in rows */
+  }
+  .fixed-close-button-wrapper {
+    top: 10px;
+    right: 10px;
+    width: auto; /* Adjust size for smaller screens */
+    height: auto;
+  }
+  .style_35_fixed_close_button_content {
+    padding: 10px; /* Simplify padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .style_3_title_text {
+    font-size: 32px;
+  }
+  .style_8_campaign_title {
+    font-size: 28px;
+  }
+  .style_9_campaign_description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

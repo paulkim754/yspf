@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Illustration Portfolio</title>
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:page-header */
+.style-2-title-container { /* Node 635:2804 */
+  background-color: #052526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; /* As per style_2 */
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-radius: 32px;
+  width: 1216px; /* From node 635:2804 absoluteBoundingBox */
+  max-width: 100%; /* Responsive */
+  box-sizing: border-box;
+}
+.style-3-title-text { /* Node I635:2804;310:1891 */
+  color: #a4e9eb;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.style-36-top-close-button { /* Node 726:5467 */
+  /* background-color: rgba(0, 0, 0, 0); From style_36 */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Was 'max', assuming flex-end */
+  align-items: center;
+  gap: 4px;
+  padding-left: 64px; /* These paddings define the large clickable area */
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  position: absolute;
+  top: 20px; /* Relative to page-wrapper padding box: 2771 (button y) - 2751 (root y) */
+  right: 32px; /* Relative to page-wrapper padding box: (10821+1280) - (11918+151) */
+  z-index: 10;
+  text-decoration: none;
+}
+.style-37-top-close-text { /* Node I726:5467;726:5446 */
+  color: #052526;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.style-38-top-close-icon { /* Node I726:5467;726:5444 */
+  /* background-color: rgba(0, 0, 0, 0); From style_38 */
+  /* overflow: hidden; */ /* Not needed for img */
+}
+
+/* CSS for section section:portfolio-gallery */
+.portfolio-gallery-items {
+  display: flex;
+  flex-direction: column;
+  gap: 128px; /* Gap between portfolio items, inherited from .page-wrapper if items are direct children */
+  width: 100%; /* Ensure it uses the available width from page-wrapper's content area */
+}
+.style-4-portfolio-item { /* For nodes like 635:2805 */
+  /* background-color: rgba(0, 0, 0, 0); */ /* Default, no need to specify */
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 1216px; /* From item's bounding box */
+  max-width: 100%; /* Responsive */
+  box-sizing: border-box;
+}
+.style-5-item-text-container { /* For nodes like 635:2806 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Not visible if only one child .style-6 */
+  border-radius: 32px; /* Not visible if bg is transparent */
+}
+.style-6-text-layout { /* For nodes like I635:2806;319:7472 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.style-6-text-layout > div { /* Children of text-layout, i.e., main and sub text wrappers */
+  flex-basis: 0; /* Allow flex-grow to distribute space */
+  flex-grow: 1;
+}
+.style-7-text-main, .style-7-text-sub { /* For nodes like I635:2806;319:7630 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Gap between title and potential other elements if any */
+}
+.style-8-item-title { /* For nodes like I635:2806;319:7474 */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+.style-9-item-description { /* For nodes like I635:2806;319:7479 */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+.style-10-item-image-container, .style-10-image-column { /* For 635:2807 (Re:birth), 635:2819 (Red Devil) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.style-11-image-group { /* For 635:2808 (Re:birth) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.style-12-image { object-fit: cover; } /* For 635:2809 */
+
+.style-13-image-row { /* For 635:2812 (Blue Bear) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.style-14-image { /* For 635:2813 */
+  object-fit: cover;
+  border-radius: 32px;
+}
+.style-15-image { /* For 635:2814 */
+  object-fit: cover;
+  border-radius: 32px;
+}
+.style-16-item-text-wrapper-centered, .style-16-item-image-wrapper-centered { /* For 635:2816, 635:2818, 635:2832, 635:2834 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* As per style_16 */
+}
+.style-17-image { object-fit: cover; } /* For 635:4805 */
+.style-18-image-row { /* For 635:2821 (Red Devil) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+}
+.style-19-image { /* For 635:2822 */
+  object-fit: cover;
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+}
+.style-20-image { /* For 635:2823 */
+  object-fit: cover;
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+}
+.style-21-item-image-wrapper { /* For 635:2826 (Waiting) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column; /* As per style_21 */
+}
+.style-22-image-column-centered { /* For 635:2827 (Waiting) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.style-23-image-row { /* For 635:2828 (Waiting) */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+.style-24-image { object-fit: cover; } /* For 635:2829 */
+.style-25-image { /* For 635:2830 */
+  object-fit: cover;
+  border-radius: 32px;
+}
+.style-26-image { object-fit: cover; } /* For 635:2835 */
+
+/* CSS for section section:page-navigation */
+.style-27-footer-nav { /* Node 635:2836 */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 82px;
+  opacity: 0.75;
+  /* overflow: hidden; */ /* Not typically needed for a footer like this */
+  width: 1216px; /* From figma, assuming it's content width like others */
+  max-width: 100%; /* Responsive */
+  box-sizing: border-box;
+}
+.style-28-nav-prev, .style-32-nav-close, .style-34-nav-next {
+  text-decoration: none;
+}
+.style-28-nav-prev { /* Node I635:2836;566:5854 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-left: 32px; /* From style_28 */
+}
+.style-29-icon-wrapper { /* Node I635:2836;726:5592 (example) */
+  background-color: #a4e9eb;
+  display: flex; /* Changed from row to match content */
+  justify-content: center;
+  align-items: center;
+  padding: 8px; /* All sides 8px */
+  border-radius: 100px;
+  opacity: 0.4;
+}
+.style-30-nav-icon, .style-33-nav-icon, .style-35-nav-icon {
+  /* background-color: rgba(0, 0, 0, 0); */
+  /* overflow: hidden; */
+}
+.style-31-nav-text { /* Node I635:2836;566:5856 (example) */
+  color: #a4e9eb;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.style-32-nav-close { /* Node I635:2836;577:7429 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* From style_32 */
+  padding-left: 35px; /* From style_32 */
+  padding-right: 35px; /* From style_32 */
+}
+.style-34-nav-next { /* Node I635:2836;566:5769 */
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Was 'max', assuming flex-end */
+  align-items: center;
+  gap: 16px;
+  padding-right: 32px; /* From style_34 */
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<div class="page-wrapper">
+  <header id="section-page-header" class="style-2-title-container">
+    <h1 class="style-3-title-text">Illustration</h1>
+  </header>
+  <a href="#close-page" class="style-36-top-close-button">
+    <span class="style-37-top-close-text">Close</span>
+    <img src="images/I726_5467_726_5444.svg" alt="Close page" class="style-38-top-close-icon svg-icon" width="24" height="24">
+  </a>
+</div>
+<main id="section-portfolio-gallery" class="portfolio-gallery-items">
+  <article id="portfolio-rebirth" class="style-4-portfolio-item">
+    <div class="style-5-item-text-container">
+      <div class="style-6-text-layout">
+        <div class="style-7-text-main">
+          <h2 class="style-8-item-title">Re:birth</h2>
+        </div>
+        <div class="style-7-text-sub">
+          <p class="style-9-item-description">“A.I. 시대의 도래. 과연 인간은 지금의 모습 그대로 남을까요, 아니면 A.I.가 인류를 지배하게 될까?” 그런 질문을 담아, 디지털 시대의 시작과 변화를 시각적으로 표현해봤어요.</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-10-item-image-container">
+      <div class="style-11-image-group">
+        <img src="images/2bc05f4240cde5b755107cad57a984f7b2aca262.png" alt="Re:birth illustration" class="style-12-image portfolio-image" width="1216" height="405">
+      </div>
+    </div>
+  </article>
+
+  <article id="portfolio-blue-bear" class="style-4-portfolio-item">
+    <div class="style-5-item-text-container">
+      <div class="style-6-text-layout">
+        <div class="style-7-text-main">
+          <h2 class="style-8-item-title">Blue Bear</h2>
+        </div>
+        <div class="style-7-text-sub">
+          <p class="style-9-item-description">귀여운 곰을 좋아해요. 그래서 곰을 모티브로 해서 나만의 스튜디오 아트워크를 만들어봤어요. 특히 나만의 아이덴티티를 담고 싶어서, 제가 좋아하는 블루 컬러로 표현했답니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-13-image-row">
+      <img src="images/935e90504d0e0dc32ea0ba3f0249914248e2bca4.png" alt="Blue Bear illustration 1" class="style-14-image portfolio-image" width="656" height="680">
+      <img src="images/005a4aa3a834b5826733b668b890d0c9aae3b8ad.png" alt="Blue Bear illustration 2" class="style-15-image portfolio-image" width="544" height="680">
+    </div>
+  </article>
+
+  <article id="portfolio-red-devil" class="style-4-portfolio-item">
+    <div class="style-16-item-text-wrapper-centered"> <!-- Node 635:2816 -->
+      <div class="style-5-item-text-container"> <!-- Node 635:2817 -->
+        <div class="style-6-text-layout">
+          <div class="style-7-text-main">
+            <h2 class="style-8-item-title">Red Devil</h2>
+          </div>
+          <div class="style-7-text-sub">
+            <p class="style-9-item-description">내 안에 살고 있는 작고 귀여운 악마를 표현해봤어요. 겉모습은 좀 이상하게 생겼지만, 사실 속마음은 엄청 착하답니다. 보면 볼수록 정가는 그런 캐릭터예요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="style-16-item-image-wrapper-centered"> <!-- Node 635:2818 -->
+      <div class="style-10-image-column"> <!-- Node 635:2819 -->
+        <img src="images/f4b0dfe8a136d068a88c5b23b7cddb4cea54264c.png" alt="Red Devil illustration 1" class="style-17-image portfolio-image" width="1216" height="684">
+        <div class="style-18-image-row"> <!-- Node 635:2821 -->
+          <img src="images/3038b8bccf0d9cc82d58e716c07178bc52aec70d.png" alt="Red Devil illustration 2" class="style-19-image portfolio-image" width="592" height="592">
+          <img src="images/c4762ca4de0360f694d26ce7aa508129cfcddfd7.png" alt="Red Devil illustration 3" class="style-20-image portfolio-image" width="592" height="592">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="portfolio-waiting" class="style-4-portfolio-item">
+    <div class="style-5-item-text-container">
+      <div class="style-6-text-layout">
+        <div class="style-7-text-main">
+          <h2 class="style-8-item-title">Waiting</h2>
+        </div>
+        <div class="style-7-text-sub">
+          <p class="style-9-item-description">팀 버튼 작품을 정말 좋아해요. 그래서 팀 버튼 스타일을 담아서, 커다란 나무들이 가득한 숲속에서 조용히 피어나는 작은 새싹의 모습을 표현해봤어요. 고요하지만 어딘가 묘하게 몽환적인 분위기를 담고 싶었어요.</p>
+        </div>
+      </div>
+    </div>
+    <div class="style-21-item-image-wrapper"> <!-- Node 635:2826 -->
+      <div class="style-22-image-column-centered"> <!-- Node 635:2827 -->
+        <div class="style-23-image-row"> <!-- Node 635:2828 -->
+          <img src="images/c16b96965281c68610c7896bbc1cd09acf935ef3.png" alt="Waiting illustration 1" class="style-24-image portfolio-image" width="600" height="824">
+          <img src="images/748116f1d95cf5de7919e42bd7756878fe322e05.png" alt="Waiting illustration 2" class="style-25-image portfolio-image" width="600" height="824">
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="portfolio-spring-bird" class="style-4-portfolio-item">
+    <div class="style-16-item-text-wrapper-centered"> <!-- Node 635:2832 -->
+      <div class="style-5-item-text-container"> <!-- Node 635:2833 -->
+        <div class="style-6-text-layout">
+          <div class="style-7-text-main">
+            <h2 class="style-8-item-title">Spring Bird</h2>
+          </div>
+          <div class="style-7-text-sub">
+            <p class="style-9-item-description">추운 겨울을 지나 따뜻한 봄이 살며시 찾아오는 느낌을 표현해봤어요. 손으로 그림을 그리고, 포토샵으로 자연스럽게 합성해서 완성했답니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="style-16-item-image-wrapper-centered"> <!-- Node 635:2834 -->
+      <img src="images/fa1ed22111f499c78c0c79bea9563db091a97dc6.png" alt="Spring Bird illustration" class="style-26-image portfolio-image" width="1216" height="1478">
+    </div>
+  </article>
+</main>
+<footer id="section-page-navigation" class="style-27-footer-nav">
+  <a href="#previous" class="style-28-nav-prev">
+    <span class="style-29-icon-wrapper">
+      <img src="images/I635_2836_726_5592_490_870.svg" alt="Previous" class="style-30-nav-icon svg-icon" width="32" height="32">
+    </span>
+    <span class="style-31-nav-text">Previous</span>
+  </a>
+  <a href="#close-gallery" class="style-32-nav-close">
+    <span class="style-29-icon-wrapper">
+      <img src="images/I635_2836_726_5499_490_870.svg" alt="Close gallery" class="style-33-nav-icon svg-icon" width="32" height="32">
+    </span>
+  </a>
+  <a href="#next" class="style-34-nav-next">
+    <span class="style-31-nav-text">Next</span>
+    <span class="style-29-icon-wrapper">
+      <img src="images/I635_2836_566_5558_490_870.svg" alt="Next" class="style-35-nav-icon svg-icon" width="32" height="32">
+    </span>
+  </a>
+</footer>
+</body>
+</html>

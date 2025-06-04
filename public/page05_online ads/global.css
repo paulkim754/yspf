@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* A light background for the page itself */
+}
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative; /* For absolute positioning of children like the close button */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.style_1 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.style_2 { /* .title */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-radius: 32px;
+  width: 1216px; /* From node 635:2772 width */
+  box-sizing: border-box;
+}
+
+.style_3 { /* Brand Identity text */
+  color: #a4e9eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.style_4 { /* Portfolio item container */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 1216px; /* From node 635:2773 width */
+  box-sizing: border-box;
+}
+
+.style_5 { /* .card_portfolio_main */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 32px;
+}
+
+.style_6 { /* txt frame */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.style_7 { /* main/sub text container */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1; /* Allow text containers to take up space */
+}
+
+.style_8 { /* Logo text */
+  color: #073e40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+}
+
+.style_9 { /* Description text */
+  color: #073e40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.style_10 { /* img container (column of images/image rows) */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.style_11 { /* img_online ads_1_1 */
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+  object-fit: contain;
+}
+
+.style_12 { /* sub img row */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 32px;
+}
+
+.style_13, .style_14, .style_15 { /* img_online ads_1_2, 1_3, 1_4 */
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.style_16 { /* img container (column, different gap) */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.style_17 { /* img_online ads_2_1 */
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.style_18 { /* sub img row */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  border-radius: 32px;
+}
+
+.style_19, .style_20, .style_21 { /* img_online ads_2_2, 2_3, 2_4 */
+  border-radius: 32px;
+  object-fit: contain; /* Assuming contain from visual, though style says border-radius only */
+}
+
+.style_22 { /* img_online ads_3_1 */
+  object-fit: cover;
+}
+
+.style_23 { /* img_online ads_3_2 */
+  object-fit: cover;
+}
+
+.style_24 { /* img row for ads_4 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.style_25 { /* img_online ads_4_1 */
+  object-fit: cover;
+}
+
+.style_26 { /* img_online ads_4_2_gif */
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.style_27 { /* close btn (bottom navigation) */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 40px; /* Adjusted from 80px to be less tall */
+  padding-bottom: 40px; /* Adjusted from 80px */
+  border-radius: 82px;
+  opacity: 0.75;
+  overflow: hidden;
+  width: 550px; /* From node 635:2801 width */
+  box-sizing: border-box;
+}
+
+.style_28 { /* previous button container */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-left: 32px;
+}
+
+.style_29 { /* .btn hover (icon wrapper) */
+  background-color: #a4e9eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px;
+  opacity: 0.4; /* Figma has 0.4, consider increasing for visibility or hover effect */
+}
+.style_29:hover {
+    opacity: 0.7;
+}
+
+.style_30, .style_33, .style_35 { /* SVG icon styles */
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.style_31 { /* Previous/Next text */
+  color: #a4e9eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+a.style_31:hover {
+    text-decoration: underline;
+}
+
+.style_32 { /* x button container */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.style_34 { /* next button container */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* 'max' is not a valid value, assuming flex-end */
+  align-items: center;
+  gap: 16px;
+  padding-right: 32px;
+}
+
+.style_36 { /* .close btn (top right) */
+  /* This style is for the instance wrapper. Positioning is separate. */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: max; -> flex-end */
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  /* Paddings are from Figma, but absolute positioning might make them less relevant */
+  /* padding-left: 64px; */
+  /* padding-right: 16px; */
+  /* padding-top: 32px; */
+  /* padding-bottom: 64px; */
+  position: absolute;
+  top: 20px; /* Relative to page-container's top edge */
+  right: 32px; /* Relative to page-container's right padding edge */
+  width: 151px; /* From node 726:5463 width */
+  height: 120px; /* From node 726:5463 height */
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.style_37 { /* Close text */
+  color: #052526;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+a.style_37:hover {
+    text-decoration: underline;
+}
+
+
+.style_38 { /* X-mark SVG */
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .style_2, .style_4 {
+    width: 100%; /* Allow sections to shrink */
+  }
+  .style_6 {
+    flex-direction: column; /* Stack text blocks on smaller screens */
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .style_1 {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 64px;
+  }
+  .style_2 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .style_3 { /* Title text */
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .style_8 { /* Section titles */
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .style_12, .style_18, .style_24 { /* Image rows */
+    flex-direction: column;
+    align-items: center;
+  }
+  .style_27 { /* Bottom navigation */
+    width: 90%;
+    gap: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .style_31 { /* Nav text */
+    font-size: 14px;
+  }
+  .style_28, .style_32, .style_34 { /* Nav button containers */
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+   .style_36 { /* Top close button */
+    top: 10px;
+    right: 10px;
+    width: auto; /* Adjust width for smaller screens */
+    height: auto;
+  }
+  .style_37 { /* Close text */
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+    .style_3 {
+        font-size: 32px;
+    }
+    .style_8 {
+        font-size: 28px;
+    }
+}

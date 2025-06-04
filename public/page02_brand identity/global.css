@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* A neutral background for the page */
+  color: #073e40; /* Default text color from style_8/style_9 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Common Component Styles */
+.portfolio-card { /* style_5 */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 32px; /* Though not specified in style_5, children often have it */
+}
+
+.portfolio-card-text-layout { /* style_6 */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.portfolio-card-main-text-wrapper,
+.portfolio-card-sub-text-wrapper { /* style_7 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.portfolio-card-main-text-wrapper { flex: 1; max-width: 568px; } /* Based on typical child width */
+.portfolio-card-sub-text-wrapper { flex: 1; max-width: 568px; } /* Based on typical child width */
+
+
+.portfolio-card-title { /* style_8 */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif; /* Ensure inheritance or explicit set */
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin: 0;
+}
+
+.portfolio-card-description { /* style_9 */
+  color: #073e40;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin: 0;
+}
+
+.card-images-container { /* style_12 */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.image-grid-column { /* style_13 */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.image-row { /* style_14 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* As per style_14, though some children might imply space-between */
+  gap: 16px;
+}
+
+.image-row img,
+.image-grid-column > img,
+.main-image-container img,
+.ai-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px; /* Common border radius for images */
+}
+
+.img-contain {
+  object-fit: contain !important;
+}
+
+/* Specific dimension classes for desktop, overridden for responsive */
+.img-dim-395x493 { width: 394.67px; height: 492.58px; }
+.img-dim-395x494 { width: 394.67px; height: 493.83px; }
+.img-dim-1216x405 { width: 1216px; height: 405px; }
+.img-dim-395x395 { width: 394.67px; height: 394.67px; }
+.img-dim-600x600 { width: 600px; height: 600px; }
+
+
+/* Responsive Styles */
+@media (max-width: 1279px) {
+  .page-container {
+    padding: 60px 24px !important;
+    gap: 80px !important;
+  }
+
+  .title-banner-section,
+  .content-section, /* Includes symbol-artwork, events-banners, product-design */
+  .ai-artwork-section {
+    width: 100% !important;
+  }
+
+  .portfolio-card-text-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .portfolio-card-main-text-wrapper,
+  .portfolio-card-sub-text-wrapper {
+    max-width: 100%;
+  }
+
+  .image-row {
+    flex-wrap: wrap; /* Allow images to wrap in a row */
+  }
+
+  .image-row img, .image-grid-column > img {
+     /* Adjust width based on number of items if wrapped, or stack them */
+  }
+  .image-row.items-3 img { width: calc((100% - 32px) / 3); }
+  .image-row.items-2 img { width: calc((100% - 16px) / 2); }
+  
+  .img-dim-395x493, .img-dim-395x494, .img-dim-1216x405, .img-dim-395x395, .img-dim-600x600 {
+    width: auto; /* Let flex sizing or percentage take over */
+    height: auto;
+  }
+   .image-row.items-2 .img-dim-600x600, .image-row.items-3 .img-dim-395x493, .image-row.items-3 .img-dim-395x494, .image-row.items-3 .img-dim-395x395 {
+     /* These specific dimension classes might need to be less specific or use flex:1 */
+     flex: 1 1 calc(50% - 8px); /* For 2 items */
+   }
+   .image-row.items-3 img {
+     flex: 1 1 calc(33.333% - 11px); /* For 3 items, approx */
+   }
+   .image-grid-column > .img-dim-1216x405 {
+     width: 100%;
+   }
+
+
+  .page-navigation-bar {
+    width: auto !important;
+    max-width: 550px; /* Keep max width */
+    padding: 30px 15px !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-container {
+    padding: 40px 16px !important;
+    gap: 60px !important;
+  }
+
+  .close-button-main {
+    top: 15px !important;
+    right: 15px !important;
+  }
+  .close-button-main span { font-size: 14px; }
+  .close-button-main img { width: 20px; height: 20px; }
+
+  .title-banner-heading,
+  .portfolio-card-title {
+    font-size: 36px !important; /* Adjusted from 64px */
+    line-height: 1.3 !important;
+  }
+
+  .portfolio-card-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-row img {
+    width: 100% !important;
+    max-width: 380px; /* Limit image width on mobile stack */
+    flex-basis: auto !important;
+  }
+
+  .ai-image-container.style-33,
+  .ai-image-container.style-35 {
+    width: 100% !important;
+    max-width: 380px;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+  }
+  .ai-image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-navigation-bar {
+    flex-direction: column;
+    padding: 20px !important;
+    gap: 15px !important;
+    border-radius: 32px !important;
+  }
+  .nav-button { width: 100%; justify-content: center; }
+  .nav-text { display: inline-block !important; font-size: 14px; } /* Show text on mobile if stacked */
+  .prev-button, .next-button, .close-nav-button { padding: 10px !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) { /* Tablet specific adjustments */
+    .image-row.items-3 img {
+        flex-basis: calc(50% - 8px); /* 2 images per row on tablet */
+    }
+    .image-row.items-3 img:last-child {
+        flex-basis: 100%; /* Last item takes full width if odd one out */
+        margin-top: 16px;
+    }
+     .page-navigation-bar .nav-text {
+        display: none; /* Icons only on tablet nav */
+    }
+    .page-navigation-bar .prev-button, .page-navigation-bar .next-button, .page-navigation-bar .close-nav-button {
+        padding: 0 !important;
+    }
+}

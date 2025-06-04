@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Contents Design</title>
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:title-banner */
+.title-banner { /* style_2 */
+  background-color: #052526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0; /* Vertical padding */
+  border-radius: 32px;
+  width: 100%; /* Takes width of content area (1216px) */
+  max-width: 1216px;
+  box-sizing: border-box;
+}
+.title-banner__heading { /* style_3 */
+  color: #a4e9eb;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 0;
+}
+
+/* CSS for section section:project-gonggan */
+.project-section {
+  width: 100%;
+  max-width: 1216px; /* Content width */
+  box-sizing: border-box;
+}
+.project-content { /* Common base for style_4 */
+  display: flex;
+  flex-direction: column;
+}
+.project-content--gonggan { /* style_4 specific */
+  gap: 64px;
+}
+.project-header { /* style_5 (INSTANCE .card_portfolio_main) - only relevant for structure, styling mostly from children */
+  display: flex; /* To contain the text layout */
+  flex-direction: column;
+  /* gap: 40px; from style_5, but style_4's 64px gap is between header and gallery */
+}
+.project-header__text-layout { /* style_6 */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.project-header__title-block, .project-header__description-block { /* style_7 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Only relevant if multiple elements inside */
+  flex: 1; /* Distribute space */
+}
+.project-title { /* style_8 */
+  color: #073e40;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin: 0;
+}
+.project-description { /* style_9 */
+  color: #073e40;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin: 0;
+}
+.project-gallery { /* Common base for style_10 */
+  display: flex;
+  flex-direction: column;
+}
+.project-gallery--gonggan { /* style_10 specific */
+   gap: 16px;
+}
+.gallery__main-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio, or set fixed height if needed */
+}
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.gallery-row--two-items { /* style_12 & style_15 */
+  /* style_12 has justify-content: center, style_15 does not. Assuming default (stretch or start) is fine if items fill space */
+}
+.gallery-row--two-items .gallery-item {
+   width: calc(50% - 8px); /* (100% - 16px gap) / 2 */
+   height: auto; /* Or fixed height if design requires, e.g. 600px */
+}
+
+/* CSS for section section:project-yeotz */
+.project-content--yeotz { /* style_4 specific */
+  gap: 64px;
+}
+.project-gallery--yeotz { /* style_10 specific */
+   gap: 16px;
+}
+.gallery-row--yeotz { /* style_19 */
+  justify-content: center; /* From style_19 */
+}
+.gallery-row--three-items .gallery-item {
+  /* Widths are 395, 394.5, 394.5. Total gap 32. (1216 - 32) / 3 = approx 394.6 */
+  width: calc(33.333% - 10.666px); /* (100% - 32px total gap) / 3 */
+  /* Or use flex-grow: 1 and let them take space based on their intrinsic aspect ratio if height is auto */
+}
+
+/* CSS for section section:project-younggu */
+.project-content--younggu { /* style_4 specific */
+  gap: 64px;
+}
+.project-gallery--younggu { /* style_10 specific */
+   gap: 16px;
+}
+.gallery-row--younggu { /* style_12 */
+  justify-content: center; /* From style_12 */
+  border-radius: 32px; /* From style_12, though applied to image container, not images themselves */
+}
+/* .gallery-row--three-items .gallery-item styling is already defined and can be reused */
+
+/* CSS for section section:project-paprika */
+.project-content--paprika { /* style_27 (on 635:2760 card_imgs) */
+  gap: 32px;
+}
+.project-gallery--paprika { /* style_28 (on 635:2762 imgs) */
+   gap: 16px;
+}
+.project-gallery--shadowed { /* style_28 */
+  box-shadow: 0px 4px 6px -1px rgba(16, 24, 41, 0.1), 0px 2px 4px -2px rgba(16, 24, 41, 0.1);
+}
+.gallery-row--paprika-1 { /* style_12 */
+  justify-content: center;
+  border-radius: 32px;
+}
+.gallery-row--paprika-2 { /* style_15 */
+  border-radius: 32px;
+}
+/* .gallery-row--two-items .gallery-item styling is already defined */
+
+/* CSS for section section:navigation */
+.page-navigation { /* style_33 */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 40px 0; /* Reduced from 80px for better balance */
+  border-radius: 82px;
+  opacity: 0.75;
+  overflow: hidden;
+  width: 550px; /* Fixed width from Figma */
+  max-width: 100%; /* For responsiveness */
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.nav-button-group {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-button-group--previous { /* style_34 */
+  gap: 16px;
+  padding-left: 32px; /* Original padding */
+}
+.nav-button-group--center { /* style_38 */
+  gap: 10px; /* Not explicitly in style_38, but visual */
+  padding-left: 35px; /* Original padding */
+  padding-right: 35px; /* Original padding */
+}
+.nav-button-group--next { /* style_40 */
+  gap: 16px;
+  justify-content: flex-end; /* Was 'max' */
+  padding-right: 32px; /* Original padding */
+}
+.nav-button__icon-wrapper { /* style_35 */
+  background-color: #a4e9eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px;
+  opacity: 0.4;
+}
+.nav-icon { /* style_36, style_39, style_41 */
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+.nav-button__text { /* style_37 */
+  color: #a4e9eb;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="section-title-banner" class="title-banner">
+  <h1 class="title-banner__heading">Contents Design</h1>
+</header>
+<section class="project-section" id="project-gonggan">
+  <div class="project-content project-content--gonggan">
+    <div class="project-header">
+      <div class="project-header__text-layout">
+        <div class="project-header__title-block">
+          <h2 class="project-title">공間시答</h2>
+        </div>
+        <div class="project-header__description-block">
+          <p class="project-description">세종시의 CI의 로고타입과 블루컬러를 모티브로 활용,  일관된 브랜드 아이덴티티 유지<br>홍보프로그램의 핵심 컨셉인 ‘문답’을 서로 대화하는 듯한 ‘말풍선’으로 표현<br>시민과의 소통을 중시하는 세종시의 아이덴티티 강조하였어요.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-gallery project-gallery--gonggan">
+      <img src="images/a2394b548868e47be4e3e84bd5bb725bf51912fe.png" alt="Contents Design 1 Main" class="gallery__main-image" width="1216" height="813" style="object-fit: cover;">
+      <div class="gallery-row gallery-row--two-items">
+        <img src="images/60176d9a0971fffcf9ce358151a08ebf7880c08f.png" alt="Contents Design 1 Sub 1" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/115396930730d7f8d415c5d287dbb5ab3b15a092.png" alt="Contents Design 1 Sub 2" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+      </div>
+      <div class="gallery-row gallery-row--two-items">
+        <img src="images/54714c6c2eaa32a806b18e54a3452dd87f4b9230.png" alt="Contents Design 1 Sub 3" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/50682ee863474ff9f0c1a85cec443422d86ad4de.png" alt="Contents Design 1 Sub 4" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="project-section" id="project-yeotz">
+  <div class="project-content project-content--yeotz">
+    <div class="project-header">
+      <div class="project-header__text-layout">
+        <div class="project-header__title-block">
+          <h2 class="project-title">엿츠</h2>
+        </div>
+        <div class="project-header__description-block">
+          <p class="project-description">엿츠 브랜드 일러스트가 흥미로워어요. 그걸 활용해 좀 더 재미있게 표현해보았습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-gallery project-gallery--yeotz">
+      <img src="images/3ab21197caf54a84af193a473b26509979a21c89.png" alt="Yeotz Main" class="gallery__main-image" width="1216" height="813" style="object-fit: cover; border-radius: 32px;">
+      <div class="gallery-row gallery-row--three-items gallery-row--yeotz">
+        <img src="images/2c851d9d47fb919ba1380a615a4b637a9beae21d.png" alt="Yeotz Sub 1" class="gallery-item" width="395" height="395" style="object-fit: contain; border-radius: 32px;">
+        <img src="images/273e461ae91cf90bd8a60250bb858a044e4e3a24.png" alt="Yeotz Sub 2" class="gallery-item" width="394.5" height="394.5" style="object-fit: contain; border-radius: 32px;">
+        <img src="images/0c699b0eec6f3b5f64f794c683131f7ed9930df2.png" alt="Yeotz Sub 3" class="gallery-item" width="394.5" height="394.5" style="object-fit: contain; border-radius: 32px;">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="project-section" id="project-younggu">
+  <div class="project-content project-content--younggu">
+    <div class="project-header">
+      <div class="project-header__text-layout">
+        <div class="project-header__title-block">
+          <h2 class="project-title">영구크린</h2>
+        </div>
+        <div class="project-header__description-block">
+          <p class="project-description">영구크린의 오래된 브랜드 이미지를 바꾸고 싶어, 좀 더 젊고 신선한 느낌이 들도록 일러스트레이션을 깔끔하게 제작해 보았어요.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-gallery project-gallery--younggu">
+      <img src="images/876d8f6ec75f34670611d1c5d2d03a310c619bc9.png" alt="Younggu Main" class="gallery__main-image" width="1216" height="813" style="object-fit: cover; border-radius: 32px;">
+      <div class="gallery-row gallery-row--three-items gallery-row--younggu">
+        <img src="images/08ac68ca1f88eeaae1217403ec8c370aae23d2f5.png" alt="Younggu Sub 1" class="gallery-item" width="394.66" height="394.66" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/2b82323dba0924e5ef73dcb768b12e6b2a3a0d51.png" alt="Younggu Sub 2" class="gallery-item" width="394.66" height="394.66" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/b260fccdf7574929db92c7883bb1efd1e49b7828.png" alt="Younggu Sub 3" class="gallery-item" width="394.66" height="394.66" style="object-fit: cover; border-radius: 32px;">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="project-section" id="project-paprika">
+  <div class="project-content project-content--paprika">
+    <div class="project-header">
+      <div class="project-header__text-layout">
+        <div class="project-header__title-block">
+          <h2 class="project-title">채널 파프리카<br>주간 이벤트</h2>
+        </div>
+        <div class="project-header__description-block">
+          <p class="project-description">채널의 귀여운 파프리카 캐릭터를 활용해서 재미있고 친근하게 표현하였어요. 덕분에 많은 팔로워들이 유입되어 좋은 성과가 있었습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-gallery project-gallery--paprika project-gallery--shadowed">
+      <div class="gallery-row gallery-row--two-items gallery-row--paprika-1">
+        <img src="images/8253470a2c141c2d4ec1eb31c387d0b4e04a4f9e.png" alt="Paprika Sub 1" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/c642f44698b1648e01c37283ca0132472ffc1ef6.png" alt="Paprika Sub 2" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+      </div>
+      <div class="gallery-row gallery-row--two-items gallery-row--paprika-2">
+        <img src="images/726afd47a8fe21f46cf6c9b5e39c33730f70b665.png" alt="Paprika Sub 3" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+        <img src="images/3e9d3eaef2f43c63ac035bc35e29d1247a14ba05.png" alt="Paprika Sub 4" class="gallery-item" width="600" height="600" style="object-fit: cover; border-radius: 32px;">
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="section-navigation" class="page-navigation">
+  <a href="#previous-project" class="nav-button-group nav-button-group--previous">
+    <span class="nav-button__icon-wrapper">
+      <img src="images/I635_2769_726_5592_490_870.svg" alt="Previous" class="nav-icon">
+    </span>
+    <span class="nav-button__text">Previous</span>
+  </a>
+  <a href="#close-action" class="nav-button-group nav-button-group--center">
+    <span class="nav-button__icon-wrapper">
+      <img src="images/I635_2769_726_5499_490_870.svg" alt="Close" class="nav-icon">
+    </span>
+  </a>
+  <a href="#next-project" class="nav-button-group nav-button-group--next">
+    <span class="nav-button__text">Next</span>
+    <span class="nav-button__icon-wrapper">
+      <img src="images/I635_2769_566_5558_490_870.svg" alt="Next" class="nav-icon">
+    </span>
+  </a>
+</footer>
+<div class="close-button-container"> <!-- Node 726:5459 -->
+    <span class="close-button__text">Close</span>
+    <img src="images/I726_5459_726_5444.svg" alt="Close page" class="close-button__icon">
+</div>
+</body>
+</html>

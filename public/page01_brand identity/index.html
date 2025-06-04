@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Identity</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:page-title */
+.page-title-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS for section section:brand-management */
+/* Specific adjustments for brand-management section image layout if needed */
+#section-brand-management .style_36, #section-brand-management .style_39 {
+    display: flex; /* Already in global, but ensure it applies */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+#section-brand-management .style_36 .image-gallery__item,
+#section-brand-management .style_39 .image-gallery__item {
+    flex-grow: 1; /* Allow items to grow */
+}
+@media (max-width: 768px) {
+    #section-brand-management .style_36, #section-brand-management .style_39 {
+        flex-direction: column;
+    }
+    #section-brand-management .style_36 .image-gallery__item,
+    #section-brand-management .style_39 .image-gallery__item {
+        flex-basis: auto !important; /* Reset basis for column layout */
+        width: 100%;
+    }
+}
+
+/* CSS for section section:page-navigation */
+.page-navigation-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page-nav-container {
+  /* style_51 */
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 30px; /* Adjusted from 80px to be less tall */
+  padding-bottom: 30px; /* Adjusted from 80px */
+  padding-left: 50px; /* For visual balance */
+  padding-right: 50px; /* For visual balance */
+  border-radius: 82px;
+  opacity: 0.75;
+  overflow: hidden;
+  max-width: 550px; /* From figma node */
+  box-sizing: border-box;
+}
+
+.page-nav__button {
+  /* style_52 for previous, style_58 for next, style_56 for close */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px; /* Common gap */
+  text-decoration: none;
+}
+.page-nav__button--previous { padding-left: 0; /* Adjusted from 32px as icon is first */ }
+.page-nav__button--next { padding-right: 0; /* Adjusted from 32px as icon is last */ justify-content: flex-end; }
+.page-nav__button--close { gap: 10px; padding-left: 0; padding-right: 0; }
+
+
+.page-nav__icon-wrapper {
+  /* style_53 */
+  background-color: #a4e9eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px;
+  opacity: 0.4;
+  width: 32px; /* original icon size */
+  height: 32px; /* original icon size */
+  box-sizing: content-box; /* padding is outside the 32x32 */
+}
+.page-nav__icon-wrapper:hover {
+    opacity: 0.7;
+}
+
+.page-nav__icon {
+  /* style_54, style_57, style_59 */
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.page-nav__text {
+  /* style_55 */
+  color: #a4e9eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page-nav-container {
+    gap: 20px;
+    padding: 20px 30px;
+    max-width: 90%;
+  }
+  .page-nav__text {
+    font-size: 14px;
+  }
+  .page-nav__button--close .page-nav__text { /* Hide text for close on mobile if needed */
+     /* display: none; */
+  }
+}
+@media (max-width: 480px) {
+  .page-nav-container {
+    flex-wrap: wrap; /* Allow buttons to wrap if too many/wide */
+  }
+  .page-nav__text {
+    display: none; /* Hide all text on very small screens, icons only */
+  }
+   .page-nav__button {
+    gap: 0;
+  }
+  .page-nav__button--close {
+    order: -1; /* Move close button to the start for easier access */
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-page-title" class="page-title-section">
+  <div class="style_2">
+    <h1 class="style_3">LOGISPOT</h1>
+  </div>
+</section>
+<section id="section-brand-guidelines" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2932 -->
+    <div class="text-layout-grid"> <!-- I635:2932;319:7472 -->
+      <div class="text-column"> <!-- I635:2932;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Brand <br>Guidlines</h2> <!-- I635:2932;319:7474 -->
+        <p class="text-style-poppins-400-16-32-download">Download</p> <!-- I635:2932;319:7475 -->
+      </div>
+      <div class="text-column"> <!-- I635:2932;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">Logispot은 국내 1위 디지털 통합 물류 서비스 기업이자, 미들마일을 이끌어가는 개척자예요. 브랜드의 개성과 분위기를 잘 드러낼 수 있도록 로고, 색상, 타이포그래피 같은 시각 요소들을 만들었고, 어떤 매체에서도 일관되게 보일 수 있도록 브랜드 가이드라인도 함께 정리했어요.</p> <!-- I635:2932;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery image-gallery--bordered"> <!-- 635:2933 -->
+    <div class="image-gallery__main-image style_12"> <!-- 635:2934 -->
+      <img src="images/36a5a83458ae78f94caae8ac3cb1c542dece2f9b.png" alt="Brand Identity Main Image 1">
+    </div>
+    <div class="image-gallery__sub-images"> <!-- 635:2935 -->
+      <div class="image-gallery__row"> <!-- 635:2936 -->
+        <div class="image-gallery__item style_15"><img src="images/bb096b5d73cb0bc1c65799826612cfc749d214b4.png" alt="Brand Identity Image 1.2"></div>
+        <div class="image-gallery__item style_16"><img src="images/98eade2273ca5d4fcc8d143ccc6dfa4f4a56c651.png" alt="Brand Identity Image 1.3"></div>
+      </div>
+      <div class="image-gallery__row"> <!-- 635:2939 -->
+        <div class="image-gallery__item style_17"><img src="images/6f9ebbfc9e0d1adf4c226440344dce6dd25a5561.png" alt="Brand Identity Image 1.4"></div>
+        <div class="image-gallery__item style_18"><img src="images/f09770ca557524def734cb082b191ab050d5ffe3.png" alt="Brand Identity Image 1.5"></div>
+      </div>
+      <div class="image-gallery__row"> <!-- 635:2942 -->
+        <div class="image-gallery__item style_19"><img src="images/c22d2dd1a7d549192f162e0f388867e501aec559.png" alt="Brand Identity Image 1.6"></div>
+        <div class="image-gallery__item style_20"><img src="images/0a9d7f8699a2417de5a0a87dfdb309fa6a5a384d.png" alt="Brand Identity Image 1.7"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-report-design" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2946 -->
+    <div class="text-layout-grid"> <!-- I635:2946;319:7472 -->
+      <div class="text-column"> <!-- I635:2946;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Report<br>Design</h2> <!-- I635:2946;319:7474 -->
+        <p class="text-style-poppins-400-16-32-download">Download</p> <!-- I635:2946;319:7475 -->
+      </div>
+      <div class="text-column"> <!-- I635:2946;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">온라인 캠페인 중 하나였던 ‘Logistics Digital Connect 2022’는 ‘뉴노멀 시대, 디지털 물류는 어디까지 왔을까요?’라는 주제로, 물류 산업에 어떤 변화가 있었는지 정리한 리포트예요. 이 리포트를 다운로드하는 캠페인을 통해 엘칸토, 대우가구 같은 새로운 리드를 발굴하는 데 도움이 되었어요.</p> <!-- I635:2946;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery"> <!-- 635:2947, style_13 based -->
+    <div class="image-gallery__main-image style_21"> <!-- 635:2948 -->
+      <img src="images/7cc04415b8ed31d3af10a0663fdfc454211d041c.png" alt="Report Design Main Image">
+    </div>
+    <div class="image-gallery__sub-images"> <!-- 635:2949 -->
+      <div class="image-gallery__row"> <!-- 635:2950 -->
+        <div class="image-gallery__item style_23"><img src="images/d1c7c594dbf6a890e3623ff610c6fbcd1e63ffba.png" alt="Report Design Image 2.2"></div>
+        <div class="image-gallery__item style_24"><img src="images/e90acf11a931b6773ffec06e9d1a350015138937.png" alt="Report Design Image 2.3"></div>
+      </div>
+      <div class="image-gallery__row"> <!-- 635:2953 -->
+        <div class="image-gallery__item style_25"><img src="images/0275b3aeaaabe486dccbeb4ea1b00d0be02045cb.png" alt="Report Design Image 2.4"></div>
+        <div class="image-gallery__item style_26"><img src="images/c01f202a867a1644c19c893964e8de38b42fb6d4.png" alt="Report Design Image 2.5"></div>
+      </div>
+      <div class="image-gallery__row"> <!-- 635:2956 -->
+        <div class="image-gallery__item style_27"><img src="images/4c729b32028da49baf682b784845859ec0fb9087.png" alt="Report Design Image 2.6"></div>
+        <div class="image-gallery__item style_28"><img src="images/2a64191c3c14e6e4b910c22d0ff68086ce4e9a10.png" alt="Report Design Image 2.7"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-brand-promo-video" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2960 -->
+    <div class="text-layout-grid"> <!-- I635:2960;319:7472 -->
+      <div class="text-column"> <!-- I635:2960;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Brand Promo Video</h2> <!-- I635:2960;319:7474 -->
+      </div>
+      <div class="text-column"> <!-- I635:2960;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">기획부터 업체 선정, 제작까지 전 과정에 아트 디렉터 겸 총괄로 참여했어요. 로지스팟이 전하고 싶은 메시지는 확실했지만, 비즈니스 모델을 잘 표현해줄 수 있는 제작사를 고르는 데 특히 신경을 많이 썼죠. 새벽까지 촬영하며 고생도 했지만, 그만큼 재미있고 기억에 남는 경험이었어요.</p> <!-- I635:2960;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery"> <!-- 635:2961 (moiton) -->
+    <div class="video-container"> <!-- 635:2962 (홍보) -->
+      <img src="images/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Promo Video Thumbnail" class="video-container__image style_30"> <!-- 635:4751 -->
+      <div class="video-container__play-button" style="top: 287px; left: 528px;"> <!-- 635:2964 -->
+        <img src="images/I635_2964_357_8621.svg" alt="Play Video"> <!-- I635:2964;357:8621 -->
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-brand-service-video" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2966 -->
+    <div class="text-layout-grid"> <!-- I635:2966;319:7472 -->
+      <div class="text-column"> <!-- I635:2966;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Brand Service<br>Video</h2> <!-- I635:2966;319:7474 -->
+      </div>
+      <div class="text-column"> <!-- I635:2966;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">로지스팟이 어떤 서비스를 하는지 쉽게 이해할 수 있도록, 일러스트 스타일로 풀어낸 모션 그래픽이에요. 복잡하게 느껴질 수 있는 물류 서비스를 누구나 한눈에 알아볼 수 있도록 설명하는 게 목표였고요.</p> <!-- I635:2966;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery"> <!-- 635:2967 (moiton) -->
+    <div class="video-container"> <!-- 635:2968 (서비스) -->
+      <img src="images/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Service Video Thumbnail" class="video-container__image style_33"> <!-- 635:2969 -->
+      <div class="video-container__play-button" style="top: 287px; left: 528px;"> <!-- 635:2970 -->
+        <img src="images/I635_2970_357_8621.svg" alt="Play Video"> <!-- I635:2970;357:8621 -->
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-brand-management" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2972 -->
+    <div class="text-layout-grid"> <!-- I635:2972;319:7472 -->
+      <div class="text-column"> <!-- I635:2972;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Brand Management</h2> <!-- I635:2972;319:7474 -->
+      </div>
+      <div class="text-column"> <!-- I635:2972;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">사내 복지를 위해 HR팀과 함께 이것저것 재미있는 프로젝트들을 진행했어요. 포스터 디자인부터 굿즈 제작까지, 직원들이 보고 즐기고 사용할 수 있는 다양한 아이템들을 만들었어요.</p> <!-- I635:2972;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="style_35"> <!-- 635:2973 (img container) -->
+    <div class="style_36"> <!-- 635:2974 (sub img row) -->
+      <div class="image-gallery__item style_37" style="flex-basis: 600px;"><img src="images/a88cb1576aa592fb8cadfd423aaf5d7cab31333f.png" alt="Brand Management Image 5.1"></div>
+      <div class="image-gallery__item style_38" style="flex-basis: 600px;"><img src="images/ab31a6801f1444e59f93f65ce65e426f018f5cd8.png" alt="Brand Management Image 5.2"></div>
+    </div>
+    <div class="style_39"> <!-- 635:2977 (img row) -->
+      <div class="image-gallery__item style_40" style="flex-basis: 395px;"><img src="images/711a0535866a54bc117416a238761efb6a09b430.png" alt="Brand Management Image 5.3"></div>
+      <div class="image-gallery__item style_41" style="flex-basis: 395px;"><img src="images/dff2c1faa6cc16965becbce64cb4ab4ddc6dcf69.png" alt="Brand Management Image 5.4"></div>
+      <div class="image-gallery__item style_42" style="flex-basis: 394px;"><img src="images/ce583bf4681af5871d9f364ad3a520a042a11c15.png" alt="Brand Management Image 5.5"></div>
+    </div>
+  </div>
+</section>
+<section id="section-booth-design" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2982 -->
+    <div class="text-layout-grid"> <!-- I635:2982;319:7472 -->
+      <div class="text-column"> <!-- I635:2982;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Booth<br>Design</h2> <!-- I635:2982;319:7474 -->
+      </div>
+      <div class="text-column"> <!-- I635:2982;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">박람회 부스 제작 아트 디렉터로 참여했어요. 처음 기획 단계부터 제작 업체와 긴밀히 협업하면서 전체적인 콘셉트와 디자인을 함께 만들어갔어요. 사람들의 시선을 끌 수 있으면서도 브랜드의 메시지가 잘 드러나도록 공간을 구성하는데 중점을 뒀어요.</p> <!-- I635:2982;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery"> <!-- 635:2983 -->
+    <div class="image-gallery__main-image style_43"> <!-- 635:2984 -->
+      <img src="images/08cbb661c56edd59b643e794b9ed59cf376a33d6.png" alt="Booth Design Main Image">
+    </div>
+    <div class="image-gallery__sub-images"> <!-- Implicit container for 635:2985 -->
+      <div class="image-gallery__row"> <!-- 635:2985 -->
+        <div class="image-gallery__item style_44"><img src="images/6f78c43bdf142a72d9275a5cb331b9f5986a350b.png" alt="Booth Design Image 6.2"></div>
+        <div class="image-gallery__item style_45"><img src="images/63cab8dede0b847ed9de6a8411fa5808180606d4.png" alt="Booth Design Image 6.3"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-space-design" class="content-section">
+  <div class="portfolio-text-card"> <!-- 635:2989 -->
+    <div class="text-layout-grid"> <!-- I635:2989;319:7472 -->
+      <div class="text-column"> <!-- I635:2989;319:7630 -->
+        <h2 class="text-style-poppins-600-64-72">Space<br>Design</h2> <!-- I635:2989;319:7474 -->
+      </div>
+      <div class="text-column"> <!-- I635:2989;319:7476 -->
+        <p class="text-style-poppins-400-16-32-desc">오피스 환경도 중요한 복지 중 하나라고 생각해요. 직원들이 더 효율적으로 일할 수 있도록 다양한 회의실을 만들고, 편하게 쉴 수 있는 공간도 신경 써서 구성했어요. 단순히 기능적인 공간을 넘어서, 우리 브랜드의 아이덴티티가 자연스럽게 묻어날 수 있도록 디자인 요소도 곳곳에 담았고요.</p> <!-- I635:2989;319:7479 -->
+      </div>
+    </div>
+  </div>
+  <div class="image-gallery"> <!-- 635:2991 -->
+    <div class="image-gallery__main-image style_46"> <!-- 635:4804 -->
+      <img src="images/361ff966724a617c6d02d68397373a483647c97c.png" alt="Space Design Main Image">
+    </div>
+    <div class="image-gallery__sub-images"> <!-- Implicit container for 635:2993 and 635:2996 -->
+      <div class="image-gallery__row"> <!-- 635:2993 -->
+        <div class="image-gallery__item style_47"><img src="images/1f2b2ede20ba04eb7c9e4fd451eb3d1455cec16d.png" alt="Space Design Image 7.2"></div>
+        <div class="image-gallery__item style_48"><img src="images/e9b94235e9882376d1ae0667f5ba63e6967b42df.png" alt="Space Design Image 7.3"></div>
+      </div>
+      <div class="image-gallery__row"> <!-- 635:2996 -->
+        <div class="image-gallery__item style_49"><img src="images/1993844616fbdeffa2d1666f1ed4c542460b1501.png" alt="Space Design Image 7.4"></div>
+        <div class="image-gallery__item style_50"><img src="images/397d54df836e5314ea94395a830c194528315162.png" alt="Space Design Image 7.5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-page-navigation" class="page-navigation-section">
+  <div class="page-nav-container"> <!-- 726:5415 -->
+    <a href="#previous" class="page-nav__button page-nav__button--previous"> <!-- I726:5415;566:5854 -->
+      <span class="page-nav__icon-wrapper"> <!-- I726:5415;726:5592 -->
+        <img src="images/I726_5415_726_5592_490_870.svg" alt="Previous" class="page-nav__icon"> <!-- I726:5415;726:5592;490:870 -->
+      </span>
+      <span class="page-nav__text">Previous</span> <!-- I726:5415;566:5856 -->
+    </a>
+    <a href="#close" class="page-nav__button page-nav__button--close"> <!-- I726:5415;577:7429 -->
+      <span class="page-nav__icon-wrapper"> <!-- I726:5415;726:5499 -->
+        <img src="images/I726_5415_726_5499_490_870.svg" alt="Close" class="page-nav__icon"> <!-- I726:5415;726:5499;490:870 -->
+      </span>
+    </a>
+    <a href="#next" class="page-nav__button page-nav__button--next"> <!-- I726:5415;566:5769 -->
+      <span class="page-nav__text">Next</span> <!-- I726:5415;566:5535 -->
+      <span class="page-nav__icon-wrapper"> <!-- I726:5415;566:5558 -->
+        <img src="images/I726_5415_566_5558_490_870.svg" alt="Next" class="page-nav__icon"> <!-- I726:5415;566:5558;490:870 -->
+      </span>
+    </a>
+  </div>
+</section>
+</body>
+</html>

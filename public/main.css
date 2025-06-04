@@ -1,0 +1,36 @@
+/* CSS for section section:hero */
+/* Styles for section-hero are mostly inline or covered by global styles */
+#section-hero {
+  min-height: 80vh; /* Ensure it takes up significant viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* For absolute positioning of children */
+}
+
+/* CSS for section section:about */
+/* Additional styles for section-about if needed */
+
+/* CSS for section section:portfolio */
+/* Additional styles for section-portfolio */
+.s_style_31::-webkit-scrollbar {
+  height: 8px;
+}
+.s_style_31::-webkit-scrollbar-thumb {
+  background: #073e40;
+  border-radius: 4px;
+}
+.s_style_31::-webkit-scrollbar-track {
+  background: #d0f5f5;
+  border-radius: 4px;
+}
+
+/* CSS for section section:career */
+/* Additional styles for section-career */
+.timeline-item__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; /* Prevent shrinking */
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poster Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.header-section {
+  /* This section is a conceptual container for the absolute button.
+     It doesn't need specific styles itself if the button is positioned relative to page-container. */
+}
+.close-button-container-abs { /* Style for 726:5471, combining with style_25 */
+  position: absolute;
+  top: 20px; 
+  right: 32px; 
+  z-index: 10;
+  /* Properties from style_25 */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; /* 'max' in figma, assuming flex-end or handled by absolute pos */
+  align-items: center;
+  gap: 4px;
+  padding-left: 64px; /* These paddings seem large, but per spec */
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  cursor: pointer;
+}
+.close-text.style_26 { /* Node I726:5471;726:5446 */
+  color: #052526;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.close-icon.style_27 { /* Node I726:5471;726:5444 */
+  width: 24px;
+  height: 24px;
+  /* background-color: rgba(0, 0, 0, 0); */ /* From style_27, not needed for img */
+  /* overflow: hidden; */ /* From style_27, not needed for img */
+}
+
+/* CSS for section section:main-title */
+.main-title-section.style_2 {
+  width: 100%; /* Takes full width of parent's content box (1216px effective) */
+  max-width: 1216px; /* Explicit max width from figma node */
+  box-sizing: border-box;
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px; /* Not relevant for single child */
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-radius: 32px;
+}
+.poster-title.style_3 {
+  color: #a4e9eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin: 0;
+}
+
+/* CSS for section section:content-details */
+.content-section.style_4 {
+  /* background-color: rgba(0, 0, 0, 0); */ /* Default */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  width: 100%; /* Takes full width of parent's content box (1216px effective) */
+  max-width: 1216px; /* Explicit max width from figma node */
+  box-sizing: border-box;
+}
+.portfolio-card.style_5 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* border-radius: 32px; */ /* No visible effect without background/border */
+  width: 100%;
+}
+.text-content-wrapper.style_6 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  width: 100%;
+}
+.main-text-block.style_7,
+.sub-text-block.style_7 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1; /* Distribute space */
+  min-width: 0; /* Allow shrinking */
+}
+.main-heading.style_8 {
+  color: #073e40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -2px;
+  text-align: left;
+  margin: 0;
+}
+.sub-paragraph.style_9 {
+  color: #073e40;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin: 0;
+}
+.image-gallery-all.style_10 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.image-row.style_11 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* overflow: hidden; */ /* Generally avoid unless necessary */
+  width: 100%;
+}
+.gallery-image {
+  display: block; /* Remove extra space under img */
+  object-fit: cover;
+}
+.gallery-image.style_12 { /* img_poster_1_1_1 */
+  width: 603px; height: 869px;
+}
+.gallery-image.style_13 { /* img_poster_1_2_1 */
+  width: 603px; height: 869px;
+}
+.gallery-image.style_14 { /* img_poster_1_3 */
+  width: 603px; height: 277px;
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+}
+.gallery-image.style_15 { /* img_poster_1_4 */
+  width: 603px; height: 277px;
+  border: 1px solid #d4d4d4;
+  border-radius: 32px;
+}
+
+/* CSS for section section:navigation-footer */
+.navigation-footer-section.style_16 {
+  width: 100%; /* Responsive width */
+  max-width: 550px; /* Original fixed width from bounding box */
+  box-sizing: border-box;
+  background-color: #052526;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 82px;
+  opacity: 0.75;
+  /* overflow: hidden; */
+}
+.nav-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.prev-button.style_17 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-left: 32px;
+}
+.icon-wrapper.style_18 {
+  background-color: #a4e9eb; /* Icon background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px; /* Circular background */
+  opacity: 0.4; /* Opacity for the wrapper, affects icon too as per figma */
+}
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+/* .style_19, .style_22, .style_24 are for specific icon sources, handled by img src. Sizes by .nav-icon. */
+
+.nav-text.style_20 {
+  color: #a4e9eb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.close-gallery-button.style_21 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* Not relevant for single icon-wrapper child */
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.next-button.style_23 {
+  /* background-color: rgba(0, 0, 0, 0); */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* 'max' in figma, interpreted as flex-end */
+  align-items: center;
+  gap: 16px;
+  padding-right: 32px;
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header" class="header-section">
+  <!-- This section's content is the absolutely positioned close button, part of .page-container -->
+  <!-- Node 726:5471 -->
+  <div class="close-button-container-abs style_25">
+    <!-- Node I726:5471;726:5446 -->
+    <span class="close-text style_26">Close</span>
+    <!-- Node I726:5471;726:5444 -->
+    <img src="images/I726_5471_726_5444.svg" alt="Close" class="close-icon style_27">
+  </div>
+</section>
+<!-- Node 635:2839 -->
+<section id="section-main-title" class="main-title-section style_2">
+  <!-- Node I635:2839;310:1891 -->
+  <h1 class="poster-title style_3">Poster</h1>
+</section>
+<!-- Node 635:2840 -->
+<section id="section-content-details" class="content-section style_4">
+  <!-- Node 635:2841 -->
+  <div class="portfolio-card style_5">
+    <!-- Node I635:2841;319:7472 -->
+    <div class="text-content-wrapper style_6">
+      <!-- Node I635:2841;319:7630 -->
+      <div class="main-text-block style_7">
+        <!-- Node I635:2841;319:7474 -->
+        <h2 class="main-heading style_8">청문청답</h2>
+      </div>
+      <!-- Node I635:2841;319:7476 -->
+      <div class="sub-text-block style_7">
+        <!-- Node I635:2841;319:7479 -->
+        <p class="sub-paragraph style_9">산림청이 주관한 ‘청문청답’ 토크콘서트 포스터 디자인이에요. 산림청에서 시안을 정말 마음에 들어 해주셔서, 타이틀 디자인을 실제 조형물로까지 제작했답니다. 포스터 작업이 현실로 확장된 멋진 경험이었어요.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Node 635:2842 -->
+  <div class="image-gallery-all style_10">
+    <!-- Node 635:2843 -->
+    <div class="image-row style_11">
+      <!-- Node 635:4810 -->
+      <img src="images/b7ec90450b910ebce3a97a33a84e4225eb90119b.png" alt="Poster Image 1" class="gallery-image style_12">
+      <!-- Node 635:4811 -->
+      <img src="images/3f42ff69b0020350dba69efe92b3f35eeefbc7f6.png" alt="Poster Image 2" class="gallery-image style_13">
+    </div>
+    <!-- Node 635:2846 -->
+    <div class="image-row style_11">
+      <!-- Node 635:2847 -->
+      <img src="images/d8c3b81fc77d90bd1f9faf862a0e74eaae0a3374.png" alt="Poster Image 3" class="gallery-image style_14">
+      <!-- Node 635:2848 -->
+      <img src="images/6e32008880e8acdb3ba5cdf4bb9bc0c5c1b07527.png" alt="Poster Image 4" class="gallery-image style_15">
+    </div>
+  </div>
+</section>
+<!-- Node 635:2849 -->
+<section id="section-navigation-footer" class="navigation-footer-section style_16">
+  <!-- Node I635:2849;566:5854 -->
+  <a href="#previous" class="nav-button prev-button style_17">
+    <!-- Node I635:2849;726:5592 -->
+    <span class="icon-wrapper style_18">
+      <!-- Node I635:2849;726:5592;490:870 -->
+      <img src="images/I635_2849_726_5592_490_870.svg" alt="Previous" class="nav-icon style_19">
+    </span>
+    <!-- Node I635:2849;566:5856 -->
+    <span class="nav-text style_20">Previous</span>
+  </a>
+
+  <!-- Node I635:2849;577:7429 -->
+  <a href="#close-gallery" class="nav-button close-gallery-button style_21">
+    <!-- Node I635:2849;726:5499 -->
+    <span class="icon-wrapper style_18">
+      <!-- Node I635:2849;726:5499;490:870 -->
+      <img src="images/I635_2849_726_5499_490_870.svg" alt="Close Gallery" class="nav-icon style_22">
+    </span>
+  </a>
+
+  <!-- Node I635:2849;566:5769 -->
+  <a href="#next" class="nav-button next-button style_23">
+    <!-- Node I635:2849;566:5535 -->
+    <span class="nav-text style_20">Next</span>
+    <!-- Node I635:2849;566:5558 -->
+    <span class="icon-wrapper style_18">
+      <!-- Node I635:2849;566:5558;490:870 -->
+      <img src="images/I635_2849_566_5558_490_870.svg" alt="Next" class="nav-icon style_24">
+    </span>
+  </a>
+</section>
+</body>
+</html>
