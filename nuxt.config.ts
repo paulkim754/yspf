@@ -1,10 +1,14 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
+import tailwindcss from '@tailwindcss/vite'
 
+export default defineNuxtConfig({
+  devtools: { enabled: true },
   app: {
     head: {
+      title: '2025 포트폴리오 김양수',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        // ... 기존 meta 태그가 있다면 여기에 추가 ...
+      ],
       link: [
         {
           rel: 'stylesheet',
@@ -18,5 +22,13 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxt/image']
+  modules: ['@nuxt/image', '@element-plus/nuxt', '@nuxt/icon'],
+
+  css: ['~/assets/css/tailwind.css'],
+
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
 })

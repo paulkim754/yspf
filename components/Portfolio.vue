@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const showModal = ref(false)
 const currentPortfolio = ref(null)
@@ -79,20 +79,24 @@ const closeModal = () => {
       </div>
     </div>
 
-    <div class="s_style_31">
+    <div 
+      class="s_style_31 scroll-draggable" 
+      ref="scrollContainer"
+    >
       <article 
         v-for="portfolio in portfolios" 
         :key="portfolio.id" 
         class="s_style_32"
         @click="openModal(portfolio)"
       >
-        <div class="s_style_33">
+        <div class="s_style_33" style="position: relative;">
           <img 
             :src="portfolio.image" 
             :alt="`Portfolio ${portfolio.title}`" 
             class="s_style_34" 
             style="width: 382px; height: 382px;"
             loading="lazy"
+            draggable="false"
           />
         </div>
         <div class="s_style_35">
@@ -102,12 +106,8 @@ const closeModal = () => {
               <span v-if="portfolio.title !== portfolio.category" class="s_textStyle_39">{{ portfolio.title }}</span>
             </h3>
           </div>
-          <div class="s_style_22">
-            <NuxtImg 
-              src="~/assets/images/main/I635_2869_490_879_490_870.svg" 
-              alt="View project" 
-              style="width: 32px; height: 32px;"
-            />
+          <div class="arrow-btn ">
+            <Icon name="material-symbols:arrow-back-rounded" size="32" class=""/>
           </div>
         </div>
       </article>
@@ -163,5 +163,44 @@ const closeModal = () => {
 
 .modal-close:hover {
   color: #000;
+}
+
+.scroll-draggable {
+  cursor: grab;
+  user-select: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.scroll-draggable.dragging {
+  cursor: grabbing;
+}
+
+.arrow-btn {
+  background-color: #a4e9eb;
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 100px;
+  opacity: 0.4;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.portfolio-mask {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #073e40; 
+  opacity: 0.7;
+  border-radius: 24px;
+  pointer-events: none;
+  z-index: 2;
 }
 </style>
