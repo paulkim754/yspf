@@ -7,16 +7,18 @@ import Contact from '@/components/Contact.vue'
 </script>
 
 <template>
-    <!-- 메인 배너 -->
-    <WelcomeBanner />
-    <!-- 소개 -->
-    <About />
-    <!-- 포트폴리오 -->
-    <Portfolio />
-    <!-- 커리어 -->
-    <Career />
-    <!-- 컨택 -->
-    <Contact />
+    <div>
+        <!-- 메인 배너 -->
+        <WelcomeBanner />
+        <!-- 소개 -->
+        <About />
+        <!-- 포트폴리오 -->
+        <Portfolio />
+        <!-- 커리어 -->
+        <Career />
+        <!-- 컨택 -->
+        <Contact />
+    </div>
 </template>
 
 <style >

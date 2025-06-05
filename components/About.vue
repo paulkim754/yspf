@@ -71,6 +71,7 @@ const next = () => {
 
 <template>
   <section id="section-about" class="about-container" aria-labelledby="about-title-main">
+    <div class="flex flex-col items-center justify-center" style="width: 1216px; max-width: 100%;">
       <div class="s_style_6">
         <div class="s_style_8">
           <p class="s_style_9">About</p>
@@ -142,6 +143,7 @@ const next = () => {
           aria-label="배너 {{ idx + 1 }}로 이동"
         ></button>
       </div>
+    </div>
     </section>
 </template>
 <style scoped>

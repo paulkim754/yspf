@@ -82,6 +82,7 @@ const closeModal = () => {
     <div 
       class="s_style_31 scroll-draggable" 
       ref="scrollContainer"
+      style="width: 1216px; max-width: 100%; padding-bottom: 32px;"
     >
       <article 
         v-for="portfolio in portfolios" 
@@ -94,7 +95,7 @@ const closeModal = () => {
             :src="portfolio.image" 
             :alt="`Portfolio ${portfolio.title}`" 
             class="s_style_34" 
-            style="width: 382px; height: 382px;"
+            style="width: 382px; height: 382px; object-fit: cover;"
             loading="lazy"
             draggable="false"
           />

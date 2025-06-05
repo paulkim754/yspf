@@ -1,5 +1,6 @@
 <template>
   <section id="section-contact" class="s_style_77" aria-labelledby="contact-title-main">
+    <div class="flex flex-col items-center justify-center" style="width: 1216px; max-width: 100%;">
       <div class="s_style_78">
         <div class="s_style_79">
           <img src="~/assets/images/main/635_2894.svg" alt="Thumbs up" style="width: 50px; height: 50px;">
@@ -10,7 +11,7 @@
         </div>
       </div>
 
-      <div class="s_style_78">
+      <div class="s_style_78" style="margin-top: 64px;">
         <div class="s_style_84">
           <div class="s_style_57 contact-section__content" style="gap: 32px; align-items: stretch;">
             <div class="s_style_85">
@@ -26,19 +27,19 @@
                     <div class="s_style_92">
                       <img src="~/assets/images/main/635_2909.svg" alt="User icon" style="width: 16px; height: 16px;">
                     </div>
-                    <p class="s_style_94"><span class="s_textStyle_base_95">Kim Yangsoo  </span><span class="s_textStyle_96">김양수</span></p>
+                    <p class="contact-text"><span class="s_textStyle_base_95">Kim Yangsoo  </span><span class="s_textStyle_96">김양수</span></p>
                   </div>
                   <div class="s_style_91">
                     <div class="s_style_92">
                       <img src="~/assets/images/main/639_5057.svg" alt="Phone icon" style="width: 16px; height: 16px;">
                     </div>
-                    <p class="s_style_94">010  2965  0458</p>
+                    <p class="contact-text">010  2965  0458</p>
                   </div>
                   <div class="s_style_91">
                     <div class="s_style_92">
                       <img src="~/assets/images/main/635_2913.svg" alt="Email icon" style="width: 16px; height: 16px;">
                     </div>
-                    <p class="s_style_94">paulkim754@gmail.com</p>
+                    <p class="contact-text">paulkim754@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -53,13 +54,19 @@
         </div>
         <p class="s_style_103">© EESANG 2025</p>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
-<script lang="ts" setup>
-
-</script>
-
-<style>
-
+<style scoped>
+.contact-text {
+  color: #073e40;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin: 0;
+    }
 </style>
