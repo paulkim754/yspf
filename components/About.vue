@@ -19,23 +19,23 @@ const items = [
   },
   {
     title: 'Mindfulness',
-    description: '히말라야 안나푸르나 4,130m 등정!<br/>강한 마음가짐이 있다면 무엇이든 할 수 있다고 생각해요.',
+    description: '영어로 자유롭게 소통할 수 있어서<br/>외국 클라이언트와도 원활하게 커뮤니케이션을 합니다.',
     image: '/images/about/img_about_4.png',
   },
   {
     title: 'Mindfulness',
-    description: '영어로 자유롭게 소통할 수 있어서<br/>외국 클라이언트와도 원활하게 커뮤니케이션을 합니다.',
-    image: '/images/about/img_about_6.png',
+    description: '히말라야 안나푸르나 4,130m 등정!<br/>강한 마음가짐이 있다면 무엇이든 할 수 있다고 생각해요.',
+    image: '/images/about/img_about_5.png',
   },
   {
     title: 'Mindfulness',
     description: '뉴욕 School of Visual Arts에서 `Culture and Design` 과정을 수료했어요. <br/> 유명 교수님들의 수업은 정말 값진 경험이었답니다.',
-    image: '/images/about/img_about_7.png',
+    image: '/images/about/img_about_6.png',
   },
   {
     title: 'Mindfulness',
     description: '"해병은 태어나는 것이 아니라 만들어지는 것이다."<br/>아직 미흡한 점이 많지만 언제나 발전하는 내가 되고 싶어요.',
-    image: '/images/about/img_about_8.png',
+    image: '/images/about/img_about_7.png',
   },
 ]
 

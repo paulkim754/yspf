@@ -1,69 +1,77 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-
+import { ref, onMounted, defineAsyncComponent } from 'vue'
+import { navigateTo } from '#app'
 const showModal = ref(false)
 const currentPortfolio = ref(null)
+const currentComponent = ref(null)
 
 const portfolios = [
   {
     id: 'logispot',
     title: 'LOGISPOT',
-    category: 'Brand Design',
-    image: '/images/c22d2dd1a7d549192f162e0f388867e501aec559.png',
-    path: '/portfolio/logispot'
+    category: 'Brand<br>Design',
+    image: '/images/portfolio/img_portfolio_1.png',
+    path: '/portfolio/logispot',
+    component: 'Logispot'
   },
   {
     id: 'hbm',
     title: 'HBM',
-    category: 'Brand Design',
-    image: '/images/338ab06edfe9d04ef0570402350544d603b15b7a.png',
-    path: '/portfolio/hbm'
+    category: 'Brand<br>Design',
+    image: '/images/portfolio/img_portfolio_2.png',
+    path: '/portfolio/hbm',
+    component: 'hbm'
   },
   {
     id: 'online-campaign',
-    title: 'Online Campaign',
-    category: 'Campaign',
-    image: '/images/c849cc1cdbbef5c95fa4d1dc4f84956770ebd398.png',
-    path: '/portfolio/online-campaign'
+    title: '',
+    category: 'Online<br>Campaign',
+    image: '/images/portfolio/img_portfolio_3.png',
+    path: '/portfolio/online-campaign',
+    component: 'online-campaign'
   },
   {
     id: 'contents-design',
-    title: 'Contents Design',
-    category: 'Design',
-    image: '/images/60176d9a0971fffcf9ce358151a08ebf7880c08f.png',
-    path: '/portfolio/contents-design'
+    title: '',
+    category: 'Contents<br>Design',
+    image: '/images/portfolio/img_portfolio_4.png',
+    path: '/portfolio/contents-design',
+    component: 'contents-design'
   },
   {
     id: 'online-ads',
-    title: 'Online Ads',
-    category: 'Ads',
-    image: '/images/f1e922026c1b55a6af195d656a69295e0b49e009.png',
-    path: '/portfolio/online-ads'
+    title: '',
+    category: 'Online<br>Ads',
+    image: '/images/portfolio/img_portfolio_5.png',
+    path: '/portfolio/online-ads',
+    component: 'online-ads'
   },
   {
     id: 'illustration',
-    title: 'Illustration',
-    category: 'Design',
-    image: '/images/139114ed064c8cea95bfcdf7ddb94545d806307a.png',
-    path: '/portfolio/illustration'
+    title: '',
+    category: 'Illustration',
+    image: '/images/portfolio/img_portfolio_6.png',
+    path: '/portfolio/illustration',
+    component: 'illustration'
   },
   {
     id: 'poster',
-    title: 'Poster',
-    category: 'Design',
-    image: '/images/c956275cc772e70896e00d502568a80bce0e10b7.png',
-    path: '/portfolio/poster'
+    title: '',
+    category: 'Poster',
+    image: '/images/portfolio/img_portfolio_7.png',
+    path: '/portfolio/poster',
+    component: 'poster'
   }
 ]
 
-const openModal = (portfolio) => {
-  currentPortfolio.value = portfolio
-  showModal.value = true
+const openModal = async (portfolio) => {
+  navigateTo(portfolio.path)
 }
 
 const closeModal = () => {
   showModal.value = false
   currentPortfolio.value = null
+  currentComponent.value = null
 }
 </script>
 
@@ -103,8 +111,8 @@ const closeModal = () => {
         <div class="s_style_35">
           <div class="s_style_36">
             <h3 class="s_style_37">
-              <span class="s_textStyle_base_38">{{ portfolio.category }} <br>Design </span>
-              <span v-if="portfolio.title !== portfolio.category" class="s_textStyle_39">{{ portfolio.title }}</span>
+              <span class="s_textStyle_base_38" v-html="portfolio.category"></span>
+              <span v-if="portfolio.title" class="s_textStyle_39" style="margin-left: 8px;">{{ portfolio.title }}</span>
             </h3>
           </div>
           <div class="arrow-btn ">
@@ -120,7 +128,7 @@ const closeModal = () => {
       <div v-if="showModal" class="modal-overlay" @click="closeModal">
         <div class="modal-content" @click.stop>
           <button class="modal-close" @click="closeModal">&times;</button>
-          <NuxtPage :page-key="currentPortfolio?.path" />
+          <component :is="currentComponent"  />
         </div>
       </div>
     </Teleport>
