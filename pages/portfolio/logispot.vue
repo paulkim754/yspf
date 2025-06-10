@@ -7,8 +7,8 @@ const router = useRouter()
   <div class="main-container">
     <div class="close-area">
       <a @click="router.back()">
-        <span style="font-size: 18px;">Close</span>
-        <Icon name="material-symbols:close" size="32" />
+        <span style="font-size: 15px;">Close</span>
+        <Icon name="material-symbols:close" size="24" />
       </a>
     </div>
     <section class="page-title-section"><h1>LOGISPOT</h1></section>
@@ -69,7 +69,13 @@ const router = useRouter()
     </section>
 
     <section class="banner-section">
-      <img class="image-container" src="/images/portfolio01/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Identity Main Image 1">
+      <div class="video-container" style="height: 676px;">
+        <img class="background-image" src="/images/portfolio01/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Identity Main Image 1">
+        <div class="play-button">
+          <img src="/images/btn_play.png" alt="Play Button">
+        </div>
+      </div>
+      
     </section>
 
     <section class="content-section">
@@ -82,7 +88,13 @@ const router = useRouter()
     </section>
 
     <section class="banner-section">
-      <img class="image-container" src="/images/portfolio01/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Identity Main Image 1">
+      <div class="video-container" style="height: 676px;">
+        <img class="background-image" src="/images/portfolio01/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Identity Main Image 1">
+        <div class="play-button">
+          <img src="/images/btn_play.png" alt="Play Button">
+        </div>
+      </div>
+      
     </section>
 
     <section class="content-section">
@@ -96,13 +108,13 @@ const router = useRouter()
 
     <section class="image-row">
       <div class="image-item"><img class="image-container" src="/images/portfolio01/a88cb1576aa592fb8cadfd423aaf5d7cab31333f.png" alt="Brand Identity Main Image 1"></div>  
-      <div class="image-item"><img class="image-container" src="/images/portfolio01/ab31a6801f1444e59f93f65ce65e426f018f5cd8.png" alt="Brand Identity Main Image 1"></div>
+      <div class="image-item"><img class="image-container" style="height: 827px !important;" src="/images/portfolio01/ab31a6801f1444e59f93f65ce65e426f018f5cd8.png" alt="Brand Identity Main Image 1"></div>
     </section>
 
-    <section class="image-row-3">
-      <div class="image-item-3"><img class="image-container" src="/images/portfolio01/711a0535866a54bc117416a238761efb6a09b430.png" alt="샘플1"></div>
-      <div class="image-item-3"><img class="image-container" src="/images/portfolio01/dff2c1faa6cc16965becbce64cb4ab4ddc6dcf69.png" alt="샘플2"></div>
-      <div class="image-item-3"><img class="image-container" src="/images/portfolio01/ce583bf4681af5871d9f364ad3a520a042a11c15.png" alt="샘플3"></div>
+    <section class="image-row-3" style="height: 370px;">
+      <div class="image-item-3" style="object-fit: cover;"><img class="image-container" src="/images/portfolio01/711a0535866a54bc117416a238761efb6a09b430.png" alt="샘플1"></div>
+      <div class="image-item-3" style="object-fit: cover;"><img class="image-container" src="/images/portfolio01/dff2c1faa6cc16965becbce64cb4ab4ddc6dcf69.png" alt="샘플2"></div>
+      <div class="image-item-3" style="object-fit: cover;"><img class="image-container" src="/images/portfolio01/ce583bf4681af5871d9f364ad3a520a042a11c15.png" alt="샘플3"></div>
     </section>
 
     <section class="content-section">
@@ -137,12 +149,13 @@ const router = useRouter()
     </section>
 
     <section class="image-row">
-      <div class="image-item"><img class="image-container" src="/images/portfolio01/1f2b2ede20ba04eb7c9e4fd451eb3d1455cec16d.png" alt="Brand Identity Main Image 1"></div>  
-      <div class="image-item"><img class="image-container" src="/images/portfolio01/e9b94235e9882376d1ae0667f5ba63e6967b42df.png" alt="Brand Identity Main Image 1"></div>
-      <div class="image-item"><img class="image-container" src="/images/portfolio01/1993844616fbdeffa2d1666f1ed4c542460b1501.png" alt="Brand Identity Main Image 1"></div>
-      <div class="image-item"><img class="image-container" src="/images/portfolio01/397d54df836e5314ea94395a830c194528315162.png" alt="Brand Identity Main Image 1"></div>
+      <div class="image-item" style="height: 388px;"><img class="image-container" src="/images/portfolio01/1f2b2ede20ba04eb7c9e4fd451eb3d1455cec16d.png" alt="Brand Identity Main Image 1"></div>  
+      <div class="image-item" style="height: 388px;"><img class="image-container" src="/images/portfolio01/e9b94235e9882376d1ae0667f5ba63e6967b42df.png" alt="Brand Identity Main Image 1"></div>
+      <div class="image-item" style="height: 388px;"><img class="image-container" src="/images/portfolio01/1993844616fbdeffa2d1666f1ed4c542460b1501.png" alt="Brand Identity Main Image 1"></div>
+      <div class="image-item" style="height: 388px;"><img class="image-container" src="/images/portfolio01/397d54df836e5314ea94395a830c194528315162.png" alt="Brand Identity Main Image 1"></div>
     </section>
     
+    <div style="height: 200px;"></div>
   </div>
 </template>
 <style scoped>
@@ -151,6 +164,32 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff; /* From style_1 of root node */
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #073e40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 48px;
+  border-radius: 32px;
+  border: 5px solid #a4e9eb;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 img.image-container  {
@@ -170,7 +209,7 @@ img.image-container  {
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
   box-sizing: border-box;
 }
@@ -178,12 +217,14 @@ img.image-container  {
 .close-area {
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 5px;
   right: 5px;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
-  background-color: #ffffff;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .close-area a {
@@ -226,7 +267,8 @@ img.image-container  {
   align-items: center;
   width: 100%;
   max-width: 1216px; /* Content width within the 1280px container */
-  margin: 128px 0;
+  margin-top: 140px;
+  margin-bottom: 60px;
 }
 
 .portfolio-text-card {
@@ -275,7 +317,6 @@ p.portfolio-text-card {
 }
 .image-item img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 32px;
   border: 1px solid #d4d4d4;
@@ -300,7 +341,6 @@ p.portfolio-text-card {
 }
 .image-item-3 img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 32px;
   border: 1px solid #d4d4d4;

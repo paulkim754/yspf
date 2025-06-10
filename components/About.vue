@@ -215,7 +215,7 @@ const next = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #073e40; opacity: 0.7;
+  background-color: #073e40; opacity: 0.4;
   z-index: 2;
 }
 

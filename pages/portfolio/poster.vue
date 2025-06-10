@@ -29,6 +29,7 @@ const router = useRouter()
       <div class="image-item"><img class="image-container" src="/images/portfolio07/6e32008880e8acdb3ba5cdf4bb9bc0c5c1b07527.png" alt="Brand Identity Main Image 1"></div>
     </section>
 
+    <div style="height: 200px;"></div>
   </div>
 </template>
 <style scoped>
@@ -37,6 +38,32 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff; /* From style_1 of root node */
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+.video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #073e40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 48px;
+  border-radius: 32px;
+  border: 5px solid #a4e9eb;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 img.image-container  {
@@ -56,7 +83,7 @@ img.image-container  {
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 80px;
   box-sizing: border-box;
 }
@@ -64,12 +91,14 @@ img.image-container  {
 .close-area {
   position: sticky;
   width: 100%;
-  top: 0px;
+  top: 5px;
   right: 5px;
   z-index: 10;
   display: flex;
   justify-content: flex-end;
-  background-color: #ffffff;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .close-area a {
@@ -112,7 +141,8 @@ img.image-container  {
   align-items: center;
   width: 100%;
   max-width: 1216px; /* Content width within the 1280px container */
-  margin: 128px 0;
+  margin-top: 140px;
+  margin-bottom: 60px;
 }
 
 .portfolio-text-card {
@@ -161,7 +191,6 @@ p.portfolio-text-card {
 }
 .image-item img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 32px;
   border: 1px solid #d4d4d4;
@@ -186,7 +215,6 @@ p.portfolio-text-card {
 }
 .image-item-3 img {
   width: 100%;
-  height: auto;
   display: block;
   border-radius: 32px;
   border: 1px solid #d4d4d4;
