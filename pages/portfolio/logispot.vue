@@ -13,15 +13,20 @@ const router = useRouter()
     </div>
     <section class="page-title-section"><h1>LOGISPOT</h1></section>
 
-    <section class="content-section">
-      <h2 class="portfolio-text-card">
-        Brand<br>Guidlines
-      </h2>
-      <p class="portfolio-text-card">
-        Logispot은 국내 1위 디지털 통합 물류 서비스 기업이자, 미들마일을 이끌어가는 개척자예요.
-        브랜드의 개성과 분위기를 잘 드러낼 수 있도록 로고, 색상, 타이포그래피 같은 시각 요소들을 만들었고, 
-        어떤 매체에서도 일관되게 보일 수 있도록 브랜드 가이드라인도 함께 정리했어요.
-      </p>
+    <section class="content-section" style="flex-direction: column;">
+      <div style="width: 100%; display: flex; flex-direction: row;">
+        <h2 class="portfolio-text-card">
+          Brand<br>Guidlines
+        </h2>
+        <p class="portfolio-text-card">
+          Logispot은 국내 1위 디지털 통합 물류 서비스 기업이자, 미들마일을 이끌어가는 개척자예요.
+          브랜드의 개성과 분위기를 잘 드러낼 수 있도록 로고, 색상, 타이포그래피 같은 시각 요소들을 만들었고, 
+          어떤 매체에서도 일관되게 보일 수 있도록 브랜드 가이드라인도 함께 정리했어요.
+        </p>
+      </div>
+      <section class="download-section">
+        <a href="https://drive.google.com/file/d/1oAuzoCgAY7OrEu8ivPK_9C0VO4G0Fgms/view?usp=sharing" target="_blank">Download</a>
+      </section>
     </section>
 
     <section class="banner-section">
@@ -37,13 +42,18 @@ const router = useRouter()
       <div class="image-item"><img class="image-container" src="/images/portfolio01/0a9d7f8699a2417de5a0a87dfdb309fa6a5a384d.png" alt="Brand Identity Main Image 1"></div>
     </section>
 
-    <section class="content-section">
-      <h2 class="portfolio-text-card">
-        Report<br>Design
-      </h2>
-      <p class="portfolio-text-card">
-        온라인 캠페인 중 하나였던 'Logistics Digital Connect 2022'는 '뉴노멀 시대, 디지털 물류는 어디까지 왔을까요?'라는 주제로, 물류 산업에 어떤 변화가 있었는지 정리한 리포트예요. 이 리포트를 다운로드하는 캠페인을 통해 엘칸토, 대우가구 같은 새로운 리드를 발굴하는 데 도움이 되었어요.
-      </p>
+    <section class="content-section" style="flex-direction: column;">
+      <div style="width: 100%; display: flex; flex-direction: row;">
+        <h2 class="portfolio-text-card">
+          Report<br>Design
+        </h2>
+        <p class="portfolio-text-card">
+          온라인 캠페인 중 하나였던 'Logistics Digital Connect 2022'는 '뉴노멀 시대, 디지털 물류는 어디까지 왔을까요?'라는 주제로, 물류 산업에 어떤 변화가 있었는지 정리한 리포트예요. 이 리포트를 다운로드하는 캠페인을 통해 엘칸토, 대우가구 같은 새로운 리드를 발굴하는 데 도움이 되었어요.
+        </p>
+      </div>
+      <section class="download-section">
+        <a href="https://drive.google.com/file/d/1MkbprvKQBu3xNq7vmcAoYzdBGHWWlKp_/view?usp=sharing" target="_blank">Download</a>
+      </section>
     </section>
 
     <section class="banner-section">
@@ -71,9 +81,11 @@ const router = useRouter()
     <section class="banner-section">
       <div class="video-container" style="height: 676px;">
         <img class="background-image" src="/images/portfolio01/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Identity Main Image 1">
-        <div class="play-button">
-          <img src="/images/btn_play.png" alt="Play Button">
-        </div>
+        <a href="https://vimeo.com/1087309612" target="_blank">
+          <div class="play-button">        
+            <img src="/images/btn_play.png" alt="Play Button">
+          </div>
+        </a>
       </div>
       
     </section>
@@ -90,9 +102,11 @@ const router = useRouter()
     <section class="banner-section">
       <div class="video-container" style="height: 676px;">
         <img class="background-image" src="/images/portfolio01/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Identity Main Image 1">
-        <div class="play-button">
-          <img src="/images/btn_play.png" alt="Play Button">
-        </div>
+        <a href="https://vimeo.com/1087176215" target="_blank">
+          <div class="play-button">
+            <img src="/images/btn_play.png" alt="Play Button">
+          </div>
+        </a>
       </div>
       
     </section>
@@ -164,6 +178,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff; /* From style_1 of root node */
+}
+
+.download-section {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1216px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.download-section a {
+  text-decoration: underline;
 }
 
 .video-container {

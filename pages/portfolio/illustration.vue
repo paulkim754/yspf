@@ -67,7 +67,7 @@ const router = useRouter()
       </p>
     </section>
 
-    <section class="image-row">
+    <section class="image-row" style="width: 100%;">
       <div class="image-item"><img class="image-container" src="/images/portfolio06/c16b96965281c68610c7896bbc1cd09acf935ef3.png" alt="Brand Identity Main Image 1"></div>  
       <div class="image-item"><img class="image-container" src="/images/portfolio06/Waiting_Production 2_2.gif" alt="Brand Identity Main Image 1"></div>
     </section>
@@ -81,7 +81,7 @@ const router = useRouter()
       </p>
     </section>
 
-    <section class="banner-section">
+    <section class="banner-section" style="width: 740px;">
       <img class="image-container" src="/images/portfolio06/fa1ed22111f499c78c0c79bea9563db091a97dc6.png" alt="Brand Identity Main Image 1">
     </section>
 

@@ -26,7 +26,7 @@ const router = useRouter()
       <img class="image-container" src="/images/portfolio05/f07c3c31d96db5aa11da8eb5b833a1600bfd2454.png" alt="Brand Identity Main Image 1">
     </section>
 
-    <section class="image-row-3">
+    <section class="image-row-3" style="width: 100%;">
       <div class="image-item-3"><img class="image-container" src="/images/portfolio05/84c6eb165b1a10d00157d15520e860259c778949.png" alt="Brand Identity Main Image 1"></div>  
       <div class="image-item-3"><img class="image-container" src="/images/portfolio05/9d976f4b7e22ab27403911297ceffeebd0a98e90.png" alt="Brand Identity Main Image 1"></div>
       <div class="image-item-3"><img class="image-container" src="/images/portfolio05/f1e922026c1b55a6af195d656a69295e0b49e009.png" alt="Brand Identity Main Image 1"></div>
@@ -37,12 +37,12 @@ const router = useRouter()
         도박에도 度가 있다
       </h2>
       <p class="portfolio-text-card">
-        국민체육진흥공단에서 진행한 불법 스포츠 도박 근절 홍보 캠페인이에요. ‘도박에도 度(정도)가 있다’는 도박사 컨셉으로 재미있게 제작했죠. 특히 직원을 직접 촬영해서 배너에 활용한 점이 포인트였어요. 덕분에 재미있는 배너가 완성되었고 반응도 좋았답니다.
+        국민체육진흥공단에서 진행한 불법 스포츠 도박 근절 홍보 캠페인이에요. '도박에도 度(정도)가 있다'는 도박사 컨셉으로 재미있게 제작했죠. 특히 직원을 직접 촬영해서 배너에 활용한 점이 포인트였어요. 덕분에 재미있는 배너가 완성되었고 반응도 좋았답니다.
             </p>
     </section>
 
-    <section class="banner-section">
-      <img class="image-container" src="/images/portfolio05/b8afc96ee6672abc65e892aef2bfe4a3d60e83a1.png" alt="Brand Identity Main Image 1">
+    <section class="banner-section" style="height: 487px; display: flex; justify-content: start;">
+      <img class="image-container" src="/images/portfolio05/b8afc96ee6672abc65e892aef2bfe4a3d60e83a1.png" alt="Brand Identity Main Image 1" style="object-fit: cover; object-position: top;">
     </section>
 
     <section class="image-row-3">
@@ -56,7 +56,7 @@ const router = useRouter()
         모두의 쿠키 &<br>드래곤가드
       </h2>
       <p class="portfolio-text-card">
-        ‘모두의 쿠키’는 다양한 캐릭터를 선택해서 플레이할 수 있다는 점을 강조해서, 그 재미가 잘 드러나도록 표현해봤고요, ‘드래곤 가드’는 당시 모바일 게임에선 보기 힘들었던 대규모 전투의 박진감을 살리는 데 집중했어요.스크린도어는 몇 미터에 달하는 큰 사이즈라, 실제 출력용 사이즈로 변환할 때 컴퓨터가 다운되는 일도 종종 있었어요. 그 덕에 아웃풋을 여러 번 조정하면서 작업했던 기억이 아직도 생생하네요.
+        '모두의 쿠키'는 다양한 캐릭터를 선택해서 플레이할 수 있다는 점을 강조해서, 그 재미가 잘 드러나도록 표현해봤고요, '드래곤 가드'는 당시 모바일 게임에선 보기 힘들었던 대규모 전투의 박진감을 살리는 데 집중했어요.스크린도어는 몇 미터에 달하는 큰 사이즈라, 실제 출력용 사이즈로 변환할 때 컴퓨터가 다운되는 일도 종종 있었어요. 그 덕에 아웃풋을 여러 번 조정하면서 작업했던 기억이 아직도 생생하네요.
       </p>
     </section>
 

@@ -98,9 +98,14 @@ onMounted(() => {
       </p>
     </section>
 
-    <section class="image-row">
-      <div class="image-item"><img class="image-container" src="/images/portfolio02/img_brand identity hbm_3_1.png" alt="Brand Identity Main Image 1"></div>  
-      <div class="image-item"><img class="image-container" src="/images/portfolio02/HBM_Motion.gif" alt="Brand Identity Main Image 1"></div>
+    <section class="image-row" style="width: 100%;">
+      <!-- 반응형에도 정사각으로 만들어야 함 -->
+      <div class="image-item" style="width: 50%; height: 590px;">
+        <img class="image-container" src="/images/portfolio02/img_brand identity hbm_3_1.png" alt="Brand Identity Main Image 1">
+      </div>  
+      <div class="image-item" style="width: 50%; height: 590px; background-color: #000; border-radius: 32px;">
+        <img class="image-container" src="/images/portfolio02/HBM_Motion.gif" style="object-fit: contain;" alt="Brand Identity Main Image 1">
+      </div>
     </section>
 
     <div style="height: 200px;"></div>

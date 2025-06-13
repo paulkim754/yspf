@@ -22,7 +22,7 @@ const router = useRouter()
       </p>
     </section>
 
-    <section class="banner-section">
+    <section class="banner-section" style="width: 740px;">
       <img class="image-container" src="/images/portfolio03/27becf149c2b601dc3b342967ca6f52682030986.png" alt="Brand Identity Main Image 1">
     </section>
 
@@ -35,21 +35,26 @@ const router = useRouter()
       </p>
     </section>
 
-    <section class="banner-section">
-      <img class="image-container" src="/images/portfolio03/89ce399188b66f7647d99a03a0b73eebde107ad1.png" alt="Brand Identity Main Image 1">
+    <section class="banner-section" style="width: 740px;">
+      <img class="image-container" src="/images/portfolio03/89ce399188b66f7647d99a03a0b73eebde107ad1.jpg" alt="Brand Identity Main Image 1">
     </section>
 
-    <section class="content-section">
-      <h2 class="portfolio-text-card">
-        Mr.Smart
-      </h2>
-      <p class="portfolio-text-card">
-        “당신의 미래가 궁금하세요?” 과거를 분석하고 미래를 설계하는 콘셉트로 진행한 ‘미스터 스마트’ 캠페인이에요. 이 캠페인으로 대한민국 광고대상 금상을 받았는데, 정말 큰 영광이었죠! 처음 맡은 큰 프로젝트라 심리적으로 부담도 컸지만, 좋은 결과가 나와서 정말 다행이었어요. 이 경험 덕분에 한 단계 성장할 수 있었던 뜻깊은 순간이었답니다.
-      </p>
+    <section class="content-section" style="flex-direction: column;">
+      <div style="width: 100%; display: flex; flex-direction: row;">
+        <h2 class="portfolio-text-card">
+          Mr.Smart
+        </h2>
+        <p class="portfolio-text-card">
+          “당신의 미래가 궁금하세요?” 과거를 분석하고 미래를 설계하는 콘셉트로 진행한 ‘미스터 스마트’ 캠페인이에요. 이 캠페인으로 대한민국 광고대상 금상을 받았는데, 정말 큰 영광이었죠! 처음 맡은 큰 프로젝트라 심리적으로 부담도 컸지만, 좋은 결과가 나와서 정말 다행이었어요. 이 경험 덕분에 한 단계 성장할 수 있었던 뜻깊은 순간이었답니다.
+        </p>
+      </div>
+      <section class="download-section">
+        <a href="https://drive.google.com/file/d/1KrUM3A1fakXIpB_lkGM3Ui9_gGl1wmiX/view?usp=sharing" target="_blank">입상리스트</a>
+      </section>
     </section>
 
     <section class="banner-section">
-      <img class="image-container" src="/images/portfolio03/cce6cd9016f6059a0cd5750aa306003c3dbd3208.png" alt="Brand Identity Main Image 1">
+      <img class="image-container" style="object-fit: none;" src="/images/portfolio03/cce6cd9016f6059a0cd5750aa306003c3dbd3208.png" alt="Brand Identity Main Image 1">
     </section>
 
     <section class="image-row">
@@ -68,6 +73,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff; /* From style_1 of root node */
+}
+
+.download-section {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1216px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.download-section a {
+  text-decoration: underline;
 }
 
 .video-container {
