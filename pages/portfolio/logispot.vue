@@ -80,14 +80,10 @@ const router = useRouter()
 
     <section class="banner-section">
       <div class="video-container" style="height: 676px;">
-        <img class="background-image" src="/images/portfolio01/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Identity Main Image 1">
         <a href="https://vimeo.com/1087309612" target="_blank">
-          <div class="play-button">        
-            <img src="/images/btn_play.png" alt="Play Button">
-          </div>
+          <img class="background-image" src="/images/portfolio01/14c91d91a558231e1e0af642b471ed4ec088da33.png" alt="Brand Identity Main Image 1">
         </a>
       </div>
-      
     </section>
 
     <section class="content-section">
@@ -101,11 +97,8 @@ const router = useRouter()
 
     <section class="banner-section">
       <div class="video-container" style="height: 676px;">
-        <img class="background-image" src="/images/portfolio01/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Identity Main Image 1">
         <a href="https://vimeo.com/1087176215" target="_blank">
-          <div class="play-button">
-            <img src="/images/btn_play.png" alt="Play Button">
-          </div>
+          <img class="background-image" src="/images/portfolio01/d6004f1aa5b2eaa047a0606aa6a5d48844c9ed76.png" alt="Brand Identity Main Image 1">
         </a>
       </div>
       
