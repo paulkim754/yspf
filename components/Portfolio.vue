@@ -83,7 +83,7 @@ const closeModal = () => {
       </div>
       <div class="s_style_30">
         <h2 id="portfolio-title-main" class="s_style_11">Make beautiful things</h2>
-        <p class="s_style_12">리서치, 컨셉 도출, 디자인 시각화 등 체계적인 프로세스를 통해 작업해요.</p>
+        <p class="s_style_12">리서치, 컨셉 도출, 디자인 시각화 등 체계적인 프로세스를 통해 작업해요</p>
       </div>
     </div>
 
