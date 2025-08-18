@@ -320,7 +320,7 @@ p.portfolio-text-card {
   max-width: 1216px;
   width: 100%;
   border: 1px solid #d4d4d4;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .image-row {
